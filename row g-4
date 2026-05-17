@@ -474,9 +474,11 @@ Desenvolvimento de projetos elétricos residenciais, comerciais e industriais co
 
 <div class="service-card">
 
-<div class="service-icon">
-<i class="fas fa-microchip"></i>
-</div>
+<img
+src="https://images.unsplash.com/photo-1563770660941-10a63607692e?q=80&w=1200&auto=format&fit=crop"
+class="service-img"
+loading="lazy"
+alt="Automação industrial">
 
 <h4>Automação Industrial</h4>
 
@@ -493,10 +495,10 @@ Integração de CLPs, IHMs, sensores e sistemas industriais inteligentes para ot
 <div class="service-card">
 
 <img
-src="https://images.unsplash.com/photo-1563770660941-10a63607692e?q=80&w=1200&auto=format&fit=crop"
+src="https://images.unsplash.com/photo-1558002038-1055907df827?q=80&w=1200&auto=format&fit=crop"
 class="service-img"
 loading="lazy"
-alt="Automação industrial">
+alt="Casa inteligente">
 
 <h4>Casas Inteligentes</h4>
 
@@ -513,10 +515,10 @@ Automação residencial moderna com controle de iluminação, segurança, climat
 <div class="service-card">
 
 <img
-src="https://images.unsplash.com/photo-1558002038-1055907df827?q=80&w=1200&auto=format&fit=crop"
+src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1200&auto=format&fit=crop"
 class="service-img"
 loading="lazy"
-alt="Casa inteligente">
+alt="Adequação NR12">
 
 <h4>Adequação NR12</h4>
 
@@ -532,9 +534,11 @@ Soluções em segurança de máquinas com relés de segurança, bimanual, cortin
 
 <div class="service-card">
 
-<div class="service-icon">
-<i class="fas fa-server"></i>
-</div>
+<img
+src="https://images.unsplash.com/photo-1581092162384-8987c1d64718?q=80&w=1200&auto=format&fit=crop"
+class="service-img"
+loading="lazy"
+alt="Painéis elétricos">
 
 <h4>Painéis Elétricos</h4>
 
@@ -550,9 +554,11 @@ Montagem de quadros elétricos, CCMs, retrofit industrial e infraestrutura elét
 
 <div class="service-card">
 
-<div class="service-icon">
-<i class="fas fa-video"></i>
-</div>
+<img
+src="https://images.unsplash.com/photo-1557597774-9d273605dfa9?q=80&w=1200&auto=format&fit=crop"
+class="service-img"
+loading="lazy"
+alt="CFTV e Segurança">
 
 <h4>CFTV e Segurança</h4>
 
@@ -565,7 +571,6 @@ Projetos de monitoramento, controle de acesso e sistemas inteligentes de seguran
 </div>
 
 </div>
-
 </div>
 
 </section>
