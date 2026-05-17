@@ -21,6 +21,7 @@ content="automação industrial bh, engenharia elétrica belo horizonte, nr12, p
 content="Projetos elétricos, automação industrial, NR12 e soluções inteligentes em Belo Horizonte e região metropolitana." />
 
 <meta property="og:type" content="website" />
+<link rel="icon" type="image/png" href="favicon.png">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
