@@ -87,7 +87,7 @@ transition:.3s;
 }
 
 .navbar-brand img{
-height:55px;
+height:80px;
 }
 
 .nav-link{
