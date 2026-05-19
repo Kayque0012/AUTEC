@@ -9,16 +9,16 @@
 <title>Adequação NR12 em BH | Autec</title>
 
 <meta name="description"
-content="Adequação NR12 em Belo Horizonte e região metropolitana. Segurança de máquinas, cortinas de luz, relés de segurança, comandos bimanuais, painéis e análise técnica.">
+content="Adequação NR12 em Belo Horizonte e região metropolitana. Segurança de máquinas, cortinas de luz, relés de segurança, comandos bimanuais, painéis elétricos e análise técnica.">
 
 <meta name="keywords"
-content="automação industrial bh, engenharia elétrica belo horizonte, NR12, painéis elétricos, automação residencial, projetos elétricos, casas inteligentes">
+content="adequação NR12 BH, laudo NR12 Belo Horizonte, segurança de máquinas, cortina de luz, relé de segurança, comando bimanual, automação industrial BH">
 
 <meta name="author" content="Autec">
 
-<meta property="og:title" content="Autec | Engenharia Elétrica e Automação">
+<meta property="og:title" content="Adequação NR12 em BH | Autec">
 <meta property="og:description"
-content="Soluções em engenharia elétrica, automação industrial, NR12 e tecnologia aplicada.">
+content="Soluções em segurança de máquinas, análise técnica, adequação elétrica e automação industrial conforme NR12.">
 
 <meta property="og:type" content="website">
 
@@ -46,6 +46,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
 --light:#f8fafc;
 --white:#ffffff;
 --border:#e5e7eb;
+--success:#16a34a;
 }
 
 *{
@@ -126,10 +127,9 @@ color:var(--white);
 .hero{
 padding-top:220px;
 padding-bottom:150px;
-
 background:
 linear-gradient(rgba(248,250,252,0.82), rgba(248,250,252,0.92)),
-url('https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1920&auto=format&fit=crop')
+url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1920&auto=format&fit=crop')
 center/cover;
 }
 
@@ -137,7 +137,7 @@ center/cover;
 font-size:4rem;
 font-weight:800;
 line-height:1.2;
-max-width:850px;
+max-width:900px;
 margin-bottom:25px;
 }
 
@@ -146,9 +146,26 @@ color:var(--primary);
 }
 
 .hero p{
-max-width:700px;
+max-width:760px;
 font-size:1.1rem;
 margin-bottom:40px;
+}
+
+.hero-badges{
+display:flex;
+flex-wrap:wrap;
+gap:12px;
+margin-bottom:35px;
+}
+
+.hero-badge{
+background:rgba(255,255,255,0.9);
+border:1px solid var(--border);
+padding:10px 16px;
+border-radius:999px;
+font-weight:600;
+font-size:.9rem;
+color:var(--primary);
 }
 
 .section-title{
@@ -164,9 +181,9 @@ margin-bottom:20px;
 color:var(--primary);
 }
 
-.service-card{
+.info-card{
 background:var(--white);
-padding:40px 30px;
+padding:35px 30px;
 border-radius:18px;
 border:1px solid var(--border);
 height:100%;
@@ -174,64 +191,109 @@ transition:.4s ease;
 box-shadow:0 10px 30px rgba(0,0,0,0.03);
 }
 
-.service-card:hover{
-transform:translateY(-10px);
+.info-card:hover{
+transform:translateY(-8px);
 box-shadow:0 20px 40px rgba(0,59,130,0.08);
 border-color:rgba(0,59,130,0.2);
 }
 
-.service-img{
-width:100%;
-height:220px;
-object-fit:cover;
-border-radius:14px;
+.info-icon{
+width:64px;
+height:64px;
+display:flex;
+align-items:center;
+justify-content:center;
+border-radius:16px;
+background:rgba(0,59,130,0.08);
 margin-bottom:25px;
-transition:.5s;
+font-size:1.6rem;
+color:var(--primary);
 }
 
-.service-card:hover .service-img{
-transform:scale(1.03);
+.dark-section{
+background:#0f172a;
+color:var(--white);
 }
 
-.service-card h4{
-margin-bottom:15px;
-font-size:1.3rem;
+.dark-section p{
+color:#cbd5e1;
 }
 
-.projects{
-background:#f1f5f9;
+.dark-section .section-title h2{
+color:var(--white);
 }
 
-.project-image{
-overflow:hidden;
-border-radius:18px;
+.check-list{
+list-style:none;
+padding:0;
+margin:0;
 }
 
-.project-image img{
-width:100%;
-height:100%;
-object-fit:cover;
-transition:.5s;
+.check-list li{
+margin-bottom:16px;
+display:flex;
+gap:12px;
+align-items:flex-start;
+color:var(--gray);
 }
 
-.project-image:hover img{
-transform:scale(1.08);
+.check-list i{
+color:var(--success);
+margin-top:5px;
 }
 
-.about{
+.process-step{
 background:var(--white);
+border:1px solid var(--border);
+border-radius:18px;
+padding:35px 30px;
+height:100%;
+position:relative;
+box-shadow:0 10px 30px rgba(0,0,0,0.03);
 }
 
-.about-image img{
-border-radius:20px;
+.step-number{
+width:48px;
+height:48px;
+border-radius:50%;
+background:var(--primary);
+color:var(--white);
+display:flex;
+align-items:center;
+justify-content:center;
+font-weight:800;
+margin-bottom:20px;
+}
+
+.image-box img{
+width:100%;
+border-radius:22px;
 box-shadow:0 20px 50px rgba(0,0,0,0.08);
 }
 
-.contact-box{
+.cta-box{
+background:var(--primary);
+padding:70px 40px;
+border-radius:26px;
+text-align:center;
+color:var(--white);
+box-shadow:0 20px 50px rgba(0,59,130,0.2);
+}
+
+.cta-box p{
+color:rgba(255,255,255,0.9);
+max-width:750px;
+margin:0 auto 35px;
+}
+
+.cta-box .btn-main{
 background:var(--white);
-padding:60px;
-border-radius:24px;
-box-shadow:0 15px 40px rgba(0,0,0,0.05);
+color:var(--primary);
+}
+
+.cta-box .btn-main:hover{
+background:#eaf2ff;
+color:var(--primary);
 }
 
 footer{
@@ -308,12 +370,12 @@ padding-top:180px;
 font-size:2.4rem;
 }
 
-.section-title h2{
-font-size:2rem;
+.hero-badges{
+justify-content:center;
 }
 
-.contact-box{
-padding:40px 25px;
+.section-title h2{
+font-size:2rem;
 }
 
 .nav-link{
@@ -337,7 +399,7 @@ height:75px;
 
 <div class="container">
 
-<a class="navbar-brand" href="#">
+<a class="navbar-brand" href="index.html">
 <img src="logo.png?v=2" alt="Logo Autec">
 </a>
 
@@ -349,34 +411,20 @@ height:75px;
 
 <ul class="navbar-nav align-items-lg-center">
 
-<li class="nav-item">
-<a class="nav-link" href="#inicio">Início</a>
-</li>
-
-<li class="nav-item">
-<a class="nav-link" href="#servicos">Serviços</a>
-</li>
-
-<li class="nav-item">
-<a class="nav-link" href="#projetos">Projetos</a>
-</li>
-
-<li class="nav-item">
-<a class="nav-link" href="#sobre">Sobre Nós</a>
-</li>
-
-<li class="nav-item">
-<a class="nav-link" href="#contato">Contato</a>
-</li>
+<li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+<li class="nav-item"><a class="nav-link" href="#problemas">Riscos</a></li>
+<li class="nav-item"><a class="nav-link" href="#avaliacao">Avaliação</a></li>
+<li class="nav-item"><a class="nav-link" href="#processo">Como Funciona</a></li>
+<li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
 
 <li class="nav-item ms-lg-4 mt-3 mt-lg-0">
 
-<a href="https://wa.me/5531972368967"
+<a href="https://wa.me/5531972368967?text=Olá,%20gostaria%20de%20solicitar%20uma%20análise%20para%20adequação%20NR12."
 target="_blank"
 class="btn-main">
 
 <i class="fab fa-whatsapp"></i>
-Solicitar orçamento
+Solicitar análise
 
 </a>
 
@@ -396,12 +444,20 @@ Solicitar orçamento
 
 <div class="reveal active">
 
+<div class="hero-badges">
+
+<span class="hero-badge">BH e Região Metropolitana</span>
+<span class="hero-badge">Segurança de Máquinas</span>
+<span class="hero-badge">Automação Industrial</span>
+
+</div>
+
 <h1>
 Adequação <span>NR12</span> para Máquinas Industriais
 </h1>
 
 <p>
-A AUTEC realiza soluções em segurança de máquinas para empresas em Belo Horizonte e região metropolitana, incluindo análise técnica, instalação de dispositivos de segurança, painéis, comandos bimanuais, cortinas de luz e integração com sistemas industriais.
+A AUTEC realiza soluções em segurança de máquinas para empresas em Belo Horizonte e região metropolitana, com análise técnica, identificação de riscos, instalação de dispositivos de segurança, adequações elétricas e integração com sistemas industriais.
 </p>
 
 <a href="https://wa.me/5531972368967?text=Olá,%20gostaria%20de%20solicitar%20uma%20análise%20para%20adequação%20NR12."
@@ -418,18 +474,19 @@ Solicitar análise NR12
 </div>
 
 </section>
-<section id="servicos">
+
+<section id="problemas">
 
 <div class="container">
 
 <div class="section-title text-center reveal">
 
 <h2>
-Nossas <span>Soluções</span>
+Sua máquina apresenta algum <span>risco?</span>
 </h2>
 
 <p>
-Tecnologia, engenharia e inovação aplicadas a projetos residenciais, comerciais e industriais.
+Máquinas sem adequação podem gerar riscos operacionais, paradas, acidentes e problemas em auditorias.
 </p>
 
 </div>
@@ -437,123 +494,51 @@ Tecnologia, engenharia e inovação aplicadas a projetos residenciais, comerciai
 <div class="row g-4">
 
 <div class="col-lg-4 col-md-6 reveal">
-
-<div class="service-card">
-
-<img
-src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?q=80&w=1200&auto=format&fit=crop"
-class="service-img"
-loading="lazy"
-alt="Projetos elétricos">
-
-<h4>Projetos Elétricos</h4>
-
-<p>
-Desenvolvimento de projetos elétricos residenciais, comerciais e industriais conforme normas técnicas.
-</p>
-
+<div class="info-card">
+<div class="info-icon"><i class="fas fa-triangle-exclamation"></i></div>
+<h4>Proteções inexistentes</h4>
+<p>Máquinas com partes móveis expostas, acesso a zonas perigosas ou proteções removidas.</p>
 </div>
-
 </div>
 
 <div class="col-lg-4 col-md-6 reveal">
-
-<div class="service-card">
-
-<img
-src="https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?q=80&w=1200&auto=format&fit=crop"
-class="service-img"
-loading="lazy"
-alt="Automação industrial">
-
-<h4>Automação Industrial</h4>
-
-<p>
-Integração de CLPs, IHMs, sensores e sistemas industriais inteligentes para otimização de processos.
-</p>
-
+<div class="info-card">
+<div class="info-icon"><i class="fas fa-hand"></i></div>
+<h4>Bimanual irregular</h4>
+<p>Comando bimanual sem antiamarramento, sem simultaneidade ou sem monitoramento adequado.</p>
 </div>
-
 </div>
 
 <div class="col-lg-4 col-md-6 reveal">
-
-<div class="service-card">
-
-<img
-src="https://images.unsplash.com/photo-1558002038-1055907df827?q=80&w=1200&auto=format&fit=crop"
-class="service-img"
-loading="lazy"
-alt="Casa inteligente">
-
-<h4>Casas Inteligentes</h4>
-
-<p>
-Automação residencial moderna com controle de iluminação, segurança, climatização e dispositivos inteligentes.
-</p>
-
+<div class="info-card">
+<div class="info-icon"><i class="fas fa-bolt"></i></div>
+<h4>Painel sem segurança</h4>
+<p>Ausência de relés de segurança, CLP de segurança, contatores redundantes ou lógica monitorada.</p>
 </div>
-
 </div>
 
 <div class="col-lg-4 col-md-6 reveal">
-
-<div class="service-card">
-
-<img
-src="https://images.unsplash.com/photo-1558002038-1055907df827?q=80&w=1200&auto=format&fit=crop"
-class="service-img"
-loading="lazy"
-alt="Adequação NR12">
-
-<h4>Adequação NR12</h4>
-
-<p>
-Soluções em segurança de máquinas com relés de segurança, bimanual, cortinas de luz e análise técnica.
-</p>
-
+<div class="info-card">
+<div class="info-icon"><i class="fas fa-eye"></i></div>
+<h4>Cortina de luz inoperante</h4>
+<p>Cortinas instaladas sem atuação real na parada da máquina ou sem distância segura correta.</p>
 </div>
-
 </div>
 
 <div class="col-lg-4 col-md-6 reveal">
-
-<div class="service-card">
-
-<img
-src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?q=80&w=1200&auto=format&fit=crop"
-class="service-img"
-loading="lazy"
-alt="Painéis elétricos">
-
-<h4>Painéis Elétricos</h4>
-
-<p>
-Montagem de quadros elétricos, CCMs, retrofit industrial e infraestrutura elétrica profissional.
-</p>
-
+<div class="info-card">
+<div class="info-icon"><i class="fas fa-rotate-left"></i></div>
+<h4>Partida inesperada</h4>
+<p>Risco de religamento automático após queda de energia, reset ou retorno de condição segura.</p>
 </div>
-
 </div>
 
 <div class="col-lg-4 col-md-6 reveal">
-
-<div class="service-card">
-
-<img
-src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1200&auto=format&fit=crop"
-class="service-img"
-loading="lazy"
-alt="CFTV e segurança">
-
-<h4>CFTV e Segurança</h4>
-
-<p>
-Projetos de monitoramento, controle de acesso e sistemas inteligentes de segurança eletrônica.
-</p>
-
+<div class="info-card">
+<div class="info-icon"><i class="fas fa-file-signature"></i></div>
+<h4>Falta de documentação</h4>
+<p>Ausência de inventário, análise de risco, diagramas atualizados ou evidências de adequação.</p>
 </div>
-
 </div>
 
 </div>
@@ -562,70 +547,7 @@ Projetos de monitoramento, controle de acesso e sistemas inteligentes de seguran
 
 </section>
 
-<section class="projects" id="projetos">
-
-<div class="container">
-
-<div class="section-title text-center reveal">
-
-<h2>
-Projetos e <span>Atuações</span>
-</h2>
-
-<p>
-Imagens ilustrativas temporárias. Você poderá substituir facilmente depois.
-</p>
-
-</div>
-
-<div class="row g-4">
-
-<div class="col-lg-4 reveal">
-
-<div class="project-image">
-
-<img
-src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?q=80&w=1200&auto=format&fit=crop"
-loading="lazy"
-alt="Projeto elétrico industrial">
-
-</div>
-
-</div>
-
-<div class="col-lg-4 reveal">
-
-<div class="project-image">
-
-<img
-src="https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=1200&auto=format&fit=crop"
-loading="lazy"
-alt="Automação industrial">
-
-</div>
-
-</div>
-
-<div class="col-lg-4 reveal">
-
-<div class="project-image">
-
-<img
-src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1200&auto=format&fit=crop"
-loading="lazy"
-alt="Painel elétrico">
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<section class="about" id="sobre">
+<section class="dark-section" id="avaliacao">
 
 <div class="container">
 
@@ -633,13 +555,122 @@ alt="Painel elétrico">
 
 <div class="col-lg-6 reveal">
 
-<div class="about-image">
+<div class="section-title">
+
+<h2>
+O que a <span>AUTEC</span> avalia na NR12?
+</h2>
+
+<p>
+Nosso trabalho busca identificar os pontos críticos da máquina e propor soluções práticas para elevar o nível de segurança e confiabilidade da operação.
+</p>
+
+</div>
+
+<ul class="check-list">
+
+<li><i class="fas fa-check-circle"></i> Sistemas de parada de emergência.</li>
+<li><i class="fas fa-check-circle"></i> Proteções físicas fixas e móveis.</li>
+<li><i class="fas fa-check-circle"></i> Cortinas de luz e sensores de segurança.</li>
+<li><i class="fas fa-check-circle"></i> Comando bimanual e antiamarramento.</li>
+<li><i class="fas fa-check-circle"></i> Relés e CLPs de segurança.</li>
+<li><i class="fas fa-check-circle"></i> Contatores redundantes e monitoramento.</li>
+<li><i class="fas fa-check-circle"></i> Painéis elétricos e documentação técnica.</li>
+<li><i class="fas fa-check-circle"></i> Riscos de partida inesperada e falhas perigosas.</li>
+
+</ul>
+
+</div>
+
+<div class="col-lg-6 reveal">
+
+<div class="image-box">
 
 <img
-src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1200&auto=format&fit=crop"
-class="img-fluid"
+src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?q=80&w=1200&auto=format&fit=crop"
 loading="lazy"
-alt="Equipe técnica">
+alt="Adequação NR12 em máquina industrial">
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="processo">
+
+<div class="container">
+
+<div class="section-title text-center reveal">
+
+<h2>
+Como funciona o <span>atendimento?</span>
+</h2>
+
+<p>
+Um processo claro para transformar riscos em soluções técnicas aplicáveis.
+</p>
+
+</div>
+
+<div class="row g-4">
+
+<div class="col-lg-3 col-md-6 reveal">
+<div class="process-step">
+<div class="step-number">1</div>
+<h4>Visita técnica</h4>
+<p>Levantamento inicial da máquina, operação, riscos aparentes e necessidades do cliente.</p>
+</div>
+</div>
+
+<div class="col-lg-3 col-md-6 reveal">
+<div class="process-step">
+<div class="step-number">2</div>
+<h4>Análise</h4>
+<p>Identificação dos pontos críticos, dispositivos necessários e melhorias técnicas recomendadas.</p>
+</div>
+</div>
+
+<div class="col-lg-3 col-md-6 reveal">
+<div class="process-step">
+<div class="step-number">3</div>
+<h4>Proposta</h4>
+<p>Definição do escopo de adequação, materiais, painéis, lógica de segurança e execução.</p>
+</div>
+</div>
+
+<div class="col-lg-3 col-md-6 reveal">
+<div class="process-step">
+<div class="step-number">4</div>
+<h4>Execução</h4>
+<p>Instalação, adequação elétrica, integração de segurança e testes funcionais da solução.</p>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="container">
+
+<div class="row align-items-center g-5">
+
+<div class="col-lg-6 reveal">
+
+<div class="image-box">
+
+<img
+src="https://images.unsplash.com/photo-1581092162384-8987c1d64718?q=80&w=1200&auto=format&fit=crop"
+loading="lazy"
+alt="Painel elétrico de segurança">
 
 </div>
 
@@ -650,31 +681,21 @@ alt="Equipe técnica">
 <div class="section-title">
 
 <h2>
-Sobre a <span>Autec</span>
+Por que adequar sua máquina à <span>NR12?</span>
 </h2>
 
 </div>
 
-<p>
-Fundada em 2022, a AUTEC vem consolidando sua atuação no mercado através de soluções modernas em engenharia elétrica, automação industrial e tecnologia aplicada.
-</p>
+<ul class="check-list">
 
-<p>
-Com atendimento em Belo Horizonte e região metropolitana, a empresa atua em projetos residenciais, comerciais e industriais, sempre priorizando qualidade, inovação, segurança e eficiência técnica.
-</p>
+<li><i class="fas fa-check-circle"></i> Reduz riscos de acidentes com operadores.</li>
+<li><i class="fas fa-check-circle"></i> Melhora a segurança operacional da máquina.</li>
+<li><i class="fas fa-check-circle"></i> Aumenta a confiabilidade do processo produtivo.</li>
+<li><i class="fas fa-check-circle"></i> Organiza a parte elétrica e a lógica de segurança.</li>
+<li><i class="fas fa-check-circle"></i> Prepara melhor a empresa para auditorias e fiscalizações.</li>
+<li><i class="fas fa-check-circle"></i> Valoriza a imagem técnica e profissional da operação.</li>
 
-<p>
-Nosso compromisso é entregar soluções inteligentes que agreguem desempenho, confiabilidade e evolução tecnológica para cada cliente e projeto.
-</p>
-
-<a href="https://wa.me/5531972368967"
-target="_blank"
-class="btn-main mt-4">
-
-<i class="fab fa-whatsapp"></i>
-Falar com nossa equipe
-
-</a>
+</ul>
 
 </div>
 
@@ -688,26 +709,22 @@ Falar com nossa equipe
 
 <div class="container">
 
-<div class="contact-box text-center reveal">
-
-<div class="section-title mb-4">
+<div class="cta-box reveal">
 
 <h2>
-Solicite um <span>Orçamento</span>
+Precisa adequar uma máquina ou linha de produção?
 </h2>
 
-</div>
-
-<p class="mb-5">
-Entre em contato diretamente pelo WhatsApp e fale com nossa equipe técnica.
+<p>
+Fale com a AUTEC pelo WhatsApp e solicite uma análise técnica para máquinas industriais em Belo Horizonte e região metropolitana.
 </p>
 
-<a href="https://wa.me/5531972368967"
+<a href="https://wa.me/5531972368967?text=Olá,%20gostaria%20de%20solicitar%20uma%20análise%20para%20adequação%20NR12."
 target="_blank"
 class="btn-main">
 
 <i class="fab fa-whatsapp"></i>
-Chamar no WhatsApp
+Solicitar análise pelo WhatsApp
 
 </a>
 
@@ -739,9 +756,9 @@ Atendimento em Belo Horizonte e Região Metropolitana.
 
 <div class="col-lg-6 text-lg-end">
 
-<p><a href="#inicio">Início</a></p>
-<p><a href="#servicos">Serviços</a></p>
-<p><a href="#sobre">Sobre Nós</a></p>
+<p><a href="index.html">Início</a></p>
+<p><a href="#problemas">Riscos</a></p>
+<p><a href="#avaliacao">Avaliação</a></p>
 <p><a href="#contato">Contato</a></p>
 
 </div>
@@ -752,7 +769,7 @@ Atendimento em Belo Horizonte e Região Metropolitana.
 
 </footer>
 
-<a href="https://wa.me/5531972368967"
+<a href="https://wa.me/5531972368967?text=Olá,%20gostaria%20de%20solicitar%20uma%20análise%20para%20adequação%20NR12."
 target="_blank"
 class="whatsapp-float">
 
@@ -786,4 +803,3 @@ reveal.classList.add('active');
 
 </body>
 </html>
-
