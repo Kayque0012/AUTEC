@@ -1,1 +1,789 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Adequação NR12 em BH | Autec</title>
+
+<meta name="description"
+content="Adequação NR12 em Belo Horizonte e região metropolitana. Segurança de máquinas, cortinas de luz, relés de segurança, comandos bimanuais, painéis e análise técnica.">
+
+<meta name="keywords"
+content="automação industrial bh, engenharia elétrica belo horizonte, NR12, painéis elétricos, automação residencial, projetos elétricos, casas inteligentes">
+
+<meta name="author" content="Autec">
+
+<meta property="og:title" content="Autec | Engenharia Elétrica e Automação">
+<meta property="og:description"
+content="Soluções em engenharia elétrica, automação industrial, NR12 e tecnologia aplicada.">
+
+<meta property="og:type" content="website">
+
+<link rel="icon" type="image/png" href="favicon.png?v=4">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+rel="stylesheet">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<style>
+
+:root{
+--primary:#003b82;
+--primary-hover:#0056b8;
+--dark:#111827;
+--gray:#6b7280;
+--light:#f8fafc;
+--white:#ffffff;
+--border:#e5e7eb;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Montserrat',sans-serif;
+background:var(--light);
+color:var(--dark);
+overflow-x:hidden;
+}
+
+section{
+padding:100px 0;
+}
+
+.container{
+max-width:1200px;
+}
+
+h1,h2,h3,h4{
+font-weight:700;
+}
+
+p{
+color:var(--gray);
+line-height:1.8;
+}
+
+.navbar{
+background:rgba(255,255,255,0.95);
+backdrop-filter:blur(12px);
+padding:5px 0;
+border-bottom:1px solid rgba(0,0,0,0.05);
+transition:.3s;
+}
+
+.navbar-brand img{
+height:120px;
+width:auto;
+}
+
+.nav-link{
+color:var(--dark)!important;
+font-weight:600;
+margin-left:20px;
+transition:.3s;
+}
+
+.nav-link:hover{
+color:var(--primary)!important;
+}
+
+.btn-main{
+background:var(--primary);
+color:var(--white);
+padding:14px 30px;
+border-radius:12px;
+text-decoration:none;
+font-weight:600;
+display:inline-flex;
+align-items:center;
+gap:10px;
+transition:.3s;
+box-shadow:0 10px 25px rgba(0,59,130,0.15);
+}
+
+.btn-main:hover{
+background:var(--primary-hover);
+transform:translateY(-3px);
+color:var(--white);
+}
+
+.hero{
+padding-top:220px;
+padding-bottom:150px;
+
+background:
+linear-gradient(rgba(248,250,252,0.82), rgba(248,250,252,0.92)),
+url('https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1920&auto=format&fit=crop')
+center/cover;
+}
+
+.hero h1{
+font-size:4rem;
+font-weight:800;
+line-height:1.2;
+max-width:850px;
+margin-bottom:25px;
+}
+
+.hero h1 span{
+color:var(--primary);
+}
+
+.hero p{
+max-width:700px;
+font-size:1.1rem;
+margin-bottom:40px;
+}
+
+.section-title{
+margin-bottom:60px;
+}
+
+.section-title h2{
+font-size:2.5rem;
+margin-bottom:20px;
+}
+
+.section-title span{
+color:var(--primary);
+}
+
+.service-card{
+background:var(--white);
+padding:40px 30px;
+border-radius:18px;
+border:1px solid var(--border);
+height:100%;
+transition:.4s ease;
+box-shadow:0 10px 30px rgba(0,0,0,0.03);
+}
+
+.service-card:hover{
+transform:translateY(-10px);
+box-shadow:0 20px 40px rgba(0,59,130,0.08);
+border-color:rgba(0,59,130,0.2);
+}
+
+.service-img{
+width:100%;
+height:220px;
+object-fit:cover;
+border-radius:14px;
+margin-bottom:25px;
+transition:.5s;
+}
+
+.service-card:hover .service-img{
+transform:scale(1.03);
+}
+
+.service-card h4{
+margin-bottom:15px;
+font-size:1.3rem;
+}
+
+.projects{
+background:#f1f5f9;
+}
+
+.project-image{
+overflow:hidden;
+border-radius:18px;
+}
+
+.project-image img{
+width:100%;
+height:100%;
+object-fit:cover;
+transition:.5s;
+}
+
+.project-image:hover img{
+transform:scale(1.08);
+}
+
+.about{
+background:var(--white);
+}
+
+.about-image img{
+border-radius:20px;
+box-shadow:0 20px 50px rgba(0,0,0,0.08);
+}
+
+.contact-box{
+background:var(--white);
+padding:60px;
+border-radius:24px;
+box-shadow:0 15px 40px rgba(0,0,0,0.05);
+}
+
+footer{
+background:#0f172a;
+padding:60px 0;
+}
+
+footer p,
+footer a{
+color:#cbd5e1;
+text-decoration:none;
+}
+
+footer a:hover{
+color:#ffffff;
+}
+
+.footer-logo{
+height:80px;
+margin-bottom:20px;
+}
+
+.whatsapp-float{
+position:fixed;
+bottom:25px;
+right:25px;
+width:70px;
+height:70px;
+background:#25D366;
+color:#fff;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:2rem;
+text-decoration:none;
+z-index:999;
+box-shadow:0 15px 35px rgba(0,0,0,0.2);
+transition:.3s;
+}
+
+.whatsapp-float:hover{
+transform:scale(1.08);
+color:#fff;
+}
+
+.reveal{
+opacity:0;
+transform:translateY(40px);
+transition:all 1s ease;
+}
+
+.reveal.active{
+opacity:1;
+transform:translateY(0);
+}
+
+@media(max-width:992px){
+
+.hero h1{
+font-size:3rem;
+}
+
+}
+
+@media(max-width:768px){
+
+.hero{
+text-align:center;
+padding-top:180px;
+}
+
+.hero h1{
+font-size:2.4rem;
+}
+
+.section-title h2{
+font-size:2rem;
+}
+
+.contact-box{
+padding:40px 25px;
+}
+
+.nav-link{
+margin-left:0;
+margin-top:10px;
+}
+
+.navbar-brand img{
+height:75px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg fixed-top">
+
+<div class="container">
+
+<a class="navbar-brand" href="#">
+<img src="logo.png?v=2" alt="Logo Autec">
+</a>
+
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+<i class="fas fa-bars"></i>
+</button>
+
+<div class="collapse navbar-collapse justify-content-end" id="menu">
+
+<ul class="navbar-nav align-items-lg-center">
+
+<li class="nav-item">
+<a class="nav-link" href="#inicio">Início</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#servicos">Serviços</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#projetos">Projetos</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#sobre">Sobre Nós</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#contato">Contato</a>
+</li>
+
+<li class="nav-item ms-lg-4 mt-3 mt-lg-0">
+
+<a href="https://wa.me/5531972368967"
+target="_blank"
+class="btn-main">
+
+<i class="fab fa-whatsapp"></i>
+Solicitar orçamento
+
+</a>
+
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</nav>
+
+<section class="hero" id="inicio">
+
+<div class="container">
+
+<div class="reveal active">
+
+<h1>
+Adequação <span>NR12</span> para Máquinas Industriais
+</h1>
+
+<p>
+A AUTEC realiza soluções em segurança de máquinas para empresas em Belo Horizonte e região metropolitana, incluindo análise técnica, instalação de dispositivos de segurança, painéis, comandos bimanuais, cortinas de luz e integração com sistemas industriais.
+</p>
+
+<a href="https://wa.me/5531972368967?text=Olá,%20gostaria%20de%20solicitar%20uma%20análise%20para%20adequação%20NR12."
+target="_blank"
+class="btn-main">
+
+<i class="fab fa-whatsapp"></i>
+Solicitar análise NR12
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+<section id="servicos">
+
+<div class="container">
+
+<div class="section-title text-center reveal">
+
+<h2>
+Nossas <span>Soluções</span>
+</h2>
+
+<p>
+Tecnologia, engenharia e inovação aplicadas a projetos residenciais, comerciais e industriais.
+</p>
+
+</div>
+
+<div class="row g-4">
+
+<div class="col-lg-4 col-md-6 reveal">
+
+<div class="service-card">
+
+<img
+src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?q=80&w=1200&auto=format&fit=crop"
+class="service-img"
+loading="lazy"
+alt="Projetos elétricos">
+
+<h4>Projetos Elétricos</h4>
+
+<p>
+Desenvolvimento de projetos elétricos residenciais, comerciais e industriais conforme normas técnicas.
+</p>
+
+</div>
+
+</div>
+
+<div class="col-lg-4 col-md-6 reveal">
+
+<div class="service-card">
+
+<img
+src="https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?q=80&w=1200&auto=format&fit=crop"
+class="service-img"
+loading="lazy"
+alt="Automação industrial">
+
+<h4>Automação Industrial</h4>
+
+<p>
+Integração de CLPs, IHMs, sensores e sistemas industriais inteligentes para otimização de processos.
+</p>
+
+</div>
+
+</div>
+
+<div class="col-lg-4 col-md-6 reveal">
+
+<div class="service-card">
+
+<img
+src="https://images.unsplash.com/photo-1558002038-1055907df827?q=80&w=1200&auto=format&fit=crop"
+class="service-img"
+loading="lazy"
+alt="Casa inteligente">
+
+<h4>Casas Inteligentes</h4>
+
+<p>
+Automação residencial moderna com controle de iluminação, segurança, climatização e dispositivos inteligentes.
+</p>
+
+</div>
+
+</div>
+
+<div class="col-lg-4 col-md-6 reveal">
+
+<div class="service-card">
+
+<img
+src="https://images.unsplash.com/photo-1558002038-1055907df827?q=80&w=1200&auto=format&fit=crop"
+class="service-img"
+loading="lazy"
+alt="Adequação NR12">
+
+<h4>Adequação NR12</h4>
+
+<p>
+Soluções em segurança de máquinas com relés de segurança, bimanual, cortinas de luz e análise técnica.
+</p>
+
+</div>
+
+</div>
+
+<div class="col-lg-4 col-md-6 reveal">
+
+<div class="service-card">
+
+<img
+src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?q=80&w=1200&auto=format&fit=crop"
+class="service-img"
+loading="lazy"
+alt="Painéis elétricos">
+
+<h4>Painéis Elétricos</h4>
+
+<p>
+Montagem de quadros elétricos, CCMs, retrofit industrial e infraestrutura elétrica profissional.
+</p>
+
+</div>
+
+</div>
+
+<div class="col-lg-4 col-md-6 reveal">
+
+<div class="service-card">
+
+<img
+src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1200&auto=format&fit=crop"
+class="service-img"
+loading="lazy"
+alt="CFTV e segurança">
+
+<h4>CFTV e Segurança</h4>
+
+<p>
+Projetos de monitoramento, controle de acesso e sistemas inteligentes de segurança eletrônica.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="projects" id="projetos">
+
+<div class="container">
+
+<div class="section-title text-center reveal">
+
+<h2>
+Projetos e <span>Atuações</span>
+</h2>
+
+<p>
+Imagens ilustrativas temporárias. Você poderá substituir facilmente depois.
+</p>
+
+</div>
+
+<div class="row g-4">
+
+<div class="col-lg-4 reveal">
+
+<div class="project-image">
+
+<img
+src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?q=80&w=1200&auto=format&fit=crop"
+loading="lazy"
+alt="Projeto elétrico industrial">
+
+</div>
+
+</div>
+
+<div class="col-lg-4 reveal">
+
+<div class="project-image">
+
+<img
+src="https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=1200&auto=format&fit=crop"
+loading="lazy"
+alt="Automação industrial">
+
+</div>
+
+</div>
+
+<div class="col-lg-4 reveal">
+
+<div class="project-image">
+
+<img
+src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1200&auto=format&fit=crop"
+loading="lazy"
+alt="Painel elétrico">
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="about" id="sobre">
+
+<div class="container">
+
+<div class="row align-items-center g-5">
+
+<div class="col-lg-6 reveal">
+
+<div class="about-image">
+
+<img
+src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1200&auto=format&fit=crop"
+class="img-fluid"
+loading="lazy"
+alt="Equipe técnica">
+
+</div>
+
+</div>
+
+<div class="col-lg-6 reveal">
+
+<div class="section-title">
+
+<h2>
+Sobre a <span>Autec</span>
+</h2>
+
+</div>
+
+<p>
+Fundada em 2022, a AUTEC vem consolidando sua atuação no mercado através de soluções modernas em engenharia elétrica, automação industrial e tecnologia aplicada.
+</p>
+
+<p>
+Com atendimento em Belo Horizonte e região metropolitana, a empresa atua em projetos residenciais, comerciais e industriais, sempre priorizando qualidade, inovação, segurança e eficiência técnica.
+</p>
+
+<p>
+Nosso compromisso é entregar soluções inteligentes que agreguem desempenho, confiabilidade e evolução tecnológica para cada cliente e projeto.
+</p>
+
+<a href="https://wa.me/5531972368967"
+target="_blank"
+class="btn-main mt-4">
+
+<i class="fab fa-whatsapp"></i>
+Falar com nossa equipe
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="contato">
+
+<div class="container">
+
+<div class="contact-box text-center reveal">
+
+<div class="section-title mb-4">
+
+<h2>
+Solicite um <span>Orçamento</span>
+</h2>
+
+</div>
+
+<p class="mb-5">
+Entre em contato diretamente pelo WhatsApp e fale com nossa equipe técnica.
+</p>
+
+<a href="https://wa.me/5531972368967"
+target="_blank"
+class="btn-main">
+
+<i class="fab fa-whatsapp"></i>
+Chamar no WhatsApp
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<div class="container">
+
+<div class="row align-items-center">
+
+<div class="col-lg-6 mb-4 mb-lg-0">
+
+<img src="logo.png?v=2" class="footer-logo" alt="Logo Autec">
+
+<p>
+AUTEC © 2026 — Engenharia Elétrica e Automação Industrial.
+</p>
+
+<p>
+Atendimento em Belo Horizonte e Região Metropolitana.
+</p>
+
+</div>
+
+<div class="col-lg-6 text-lg-end">
+
+<p><a href="#inicio">Início</a></p>
+<p><a href="#servicos">Serviços</a></p>
+<p><a href="#sobre">Sobre Nós</a></p>
+<p><a href="#contato">Contato</a></p>
+
+</div>
+
+</div>
+
+</div>
+
+</footer>
+
+<a href="https://wa.me/5531972368967"
+target="_blank"
+class="whatsapp-float">
+
+<i class="fab fa-whatsapp"></i>
+
+</a>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+
+const reveals = document.querySelectorAll('.reveal');
+
+window.addEventListener('scroll', () => {
+
+reveals.forEach(reveal => {
+
+const windowHeight = window.innerHeight;
+const revealTop = reveal.getBoundingClientRect().top;
+const revealPoint = 100;
+
+if(revealTop < windowHeight - revealPoint){
+reveal.classList.add('active');
+}
+
+});
+
+});
+
+</script>
+
+</body>
+</html>
 
