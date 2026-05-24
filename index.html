@@ -326,6 +326,90 @@ height:75px;
 }
 
 }
+  .autec-numeros {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  padding: 80px 8%;
+  background: #06111f;
+  color: #fff;
+}
+
+.numero-card {
+  padding: 32px;
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 22px;
+  background: rgba(255,255,255,0.04);
+  text-align: center;
+}
+
+.numero-card h2 {
+  font-size: 56px;
+  color: #1e88ff;
+}
+
+.autec-historia,
+.autec-diferenciais {
+  padding: 90px 8%;
+  background: #f7f9fc;
+}
+
+.tag {
+  color: #1e88ff;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.autec-historia h2,
+.autec-diferenciais h2 {
+  font-size: 42px;
+  max-width: 800px;
+  color: #07111f;
+}
+
+.autec-historia p {
+  max-width: 850px;
+  font-size: 18px;
+  color: #4b5563;
+  line-height: 1.7;
+}
+
+.grid-diferenciais {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+  margin-top: 40px;
+}
+
+.grid-diferenciais div {
+  background: #fff;
+  padding: 28px;
+  border-radius: 20px;
+  box-shadow: 0 12px 35px rgba(0,0,0,0.06);
+}
+
+.grid-diferenciais h3 {
+  color: #07111f;
+  margin-bottom: 12px;
+}
+
+.grid-diferenciais p {
+  color: #5b6472;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .autec-numeros,
+  .grid-diferenciais {
+    grid-template-columns: 1fr;
+  }
+
+  .autec-historia h2,
+  .autec-diferenciais h2 {
+    font-size: 32px;
+  }
+}
 
 </style>
 
@@ -770,8 +854,97 @@ class="whatsapp-float">
 </a>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <section class="autec-numeros">
+  <div class="numero-card">
+    <h2 data-count="5">0</h2>
+    <p>Áreas de atuação</p>
+  </div>
+  <div class="numero-card">
+    <h2 data-count="100">0</h2>
+    <p>Compromisso técnico</p>
+  </div>
+  <div class="numero-card">
+    <h2 data-count="24">0</h2>
+    <p>Atendimento consultivo</p>
+  </div>
+</section>
+
+<section class="autec-historia">
+  <span class="tag">Conheça nossa história</span>
+  <h2>Engenharia, automação e segurança para transformar operações.</h2>
+  <p>
+    A AUTEC nasceu com o propósito de oferecer soluções técnicas inteligentes
+    para empresas, indústrias e residências que buscam segurança, eficiência
+    e modernização em seus sistemas elétricos e automatizados.
+  </p>
+  <p>
+    Atuamos com projetos elétricos, automação industrial, NR12, montagem de
+    painéis, CFTV e casas inteligentes, sempre unindo conhecimento técnico,
+    responsabilidade e visão prática de campo.
+  </p>
+</section>
+
+<section class="autec-diferenciais">
+  <span class="tag">Nosso diferencial</span>
+  <h2>Por que escolher a AUTEC?</h2>
+
+  <div class="grid-diferenciais">
+    <div>
+      <h3>Visão técnica de campo</h3>
+      <p>Soluções pensadas por quem entende a realidade da indústria e da instalação.</p>
+    </div>
+
+    <div>
+      <h3>Segurança em primeiro lugar</h3>
+      <p>Projetos alinhados com boas práticas, NR12 e confiabilidade operacional.</p>
+    </div>
+
+    <div>
+      <h3>Soluções personalizadas</h3>
+      <p>Cada projeto é desenvolvido conforme a necessidade real do cliente.</p>
+    </div>
+
+    <div>
+      <h3>Atendimento próximo</h3>
+      <p>Comunicação clara, suporte técnico e acompanhamento do início ao fim.</p>
+    </div>
+  </div>
+</section>
 
 <script>
+  <script>
+  const counters = document.querySelectorAll("[data-count]");
+
+  const animateCounter = (counter) => {
+    const target = +counter.getAttribute("data-count");
+    let current = 0;
+    const increment = target / 80;
+
+    const update = () => {
+      current += increment;
+
+      if (current < target) {
+        counter.innerText = Math.ceil(current);
+        requestAnimationFrame(update);
+      } else {
+        counter.innerText = target + "+";
+      }
+    };
+
+    update();
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        animateCounter(entry.target);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.5 });
+
+  counters.forEach(counter => observer.observe(counter));
+</script>
 
 const reveals = document.querySelectorAll('.reveal');
 
