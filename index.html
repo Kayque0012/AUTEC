@@ -411,6 +411,285 @@ height:75px;
   }
 }
 
+/* ===== AVALIAÇÕES PREMIUM ===== */
+
+.reviews-premium{
+position:relative;
+background:
+linear-gradient(rgba(248,250,252,0.92), rgba(248,250,252,0.96)),
+url('https://images.unsplash.com/photo-1581092162384-8987c1d64718?q=80&w=1920&auto=format&fit=crop')
+center/cover;
+overflow:hidden;
+}
+
+.reviews-premium::before{
+content:"“";
+position:absolute;
+top:20px;
+left:40px;
+font-size:220px;
+font-weight:800;
+color:rgba(0,59,130,0.05);
+line-height:1;
+}
+
+.reviews-header{
+text-align:center;
+max-width:900px;
+margin:0 auto 35px;
+position:relative;
+z-index:2;
+}
+
+.reviews-badge{
+display:inline-flex;
+align-items:center;
+gap:8px;
+background:#fff;
+color:var(--dark);
+font-weight:700;
+padding:10px 22px;
+border-radius:999px;
+box-shadow:0 10px 30px rgba(0,0,0,0.06);
+margin-bottom:22px;
+}
+
+.reviews-badge i{
+color:var(--primary);
+}
+
+.reviews-header h2{
+font-size:3.2rem;
+font-weight:800;
+margin-bottom:18px;
+}
+
+.reviews-header h2 span{
+color:var(--primary);
+}
+
+.reviews-header p{
+font-size:1.05rem;
+}
+
+.reviews-stats{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:22px;
+max-width:900px;
+margin:0 auto 45px;
+position:relative;
+z-index:2;
+}
+
+.stat-item{
+background:rgba(255,255,255,0.88);
+backdrop-filter:blur(12px);
+border:1px solid rgba(255,255,255,0.8);
+border-radius:18px;
+padding:20px 24px;
+display:flex;
+align-items:center;
+gap:16px;
+box-shadow:0 12px 35px rgba(0,0,0,0.06);
+}
+
+.stat-item i{
+width:52px;
+height:52px;
+border-radius:50%;
+background:var(--primary);
+color:#fff;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:1.3rem;
+box-shadow:0 10px 25px rgba(0,59,130,0.25);
+}
+
+.stat-item strong{
+display:block;
+font-size:1.5rem;
+color:var(--primary);
+line-height:1.1;
+}
+
+.stat-item span{
+color:var(--gray);
+font-weight:500;
+font-size:.95rem;
+}
+
+.review-premium-card{
+position:relative;
+background:rgba(255,255,255,0.92);
+border:1px solid rgba(255,255,255,0.9);
+border-radius:26px;
+padding:42px 34px 32px;
+height:100%;
+box-shadow:0 20px 50px rgba(0,0,0,0.09);
+transition:.35s ease;
+overflow:hidden;
+}
+
+.review-premium-card::before{
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:7px;
+background:linear-gradient(90deg,var(--primary),#1e88ff);
+opacity:0;
+transition:.35s;
+}
+
+.review-premium-card:hover,
+.review-premium-card.featured{
+transform:translateY(-10px);
+box-shadow:0 25px 60px rgba(0,59,130,0.18);
+}
+
+.review-premium-card:hover::before,
+.review-premium-card.featured::before{
+opacity:1;
+}
+
+.quote-icon{
+width:58px;
+height:58px;
+border-radius:50%;
+background:var(--primary);
+color:#fff;
+font-size:3rem;
+line-height:74px;
+text-align:center;
+font-weight:800;
+margin-bottom:22px;
+box-shadow:0 12px 30px rgba(0,59,130,0.25);
+}
+
+.stars{
+color:#fbbf24;
+font-size:1.25rem;
+margin-bottom:20px;
+letter-spacing:2px;
+}
+
+.review-premium-card p{
+font-size:1.02rem;
+color:#374151;
+line-height:1.75;
+margin-bottom:30px;
+}
+
+.client-info{
+display:flex;
+align-items:center;
+gap:16px;
+padding-top:22px;
+border-top:1px solid var(--border);
+}
+
+.client-avatar{
+width:58px;
+height:58px;
+border-radius:50%;
+background:#eef5ff;
+color:var(--primary);
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:1.45rem;
+border:3px solid #dbeafe;
+}
+
+.client-info h4{
+font-size:1.1rem;
+margin:0 0 4px;
+color:var(--dark);
+}
+
+.client-info span{
+color:var(--primary);
+font-weight:600;
+font-size:.92rem;
+}
+
+.trust-bar{
+margin-top:55px;
+background:rgba(255,255,255,0.9);
+border:1px solid rgba(255,255,255,0.9);
+border-radius:22px;
+padding:26px 30px;
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+box-shadow:0 15px 40px rgba(0,0,0,0.07);
+}
+
+.trust-bar div{
+display:flex;
+flex-direction:column;
+align-items:center;
+text-align:center;
+gap:6px;
+border-right:1px solid var(--border);
+}
+
+.trust-bar div:last-child{
+border-right:none;
+}
+
+.trust-bar i{
+font-size:2rem;
+color:var(--primary);
+margin-bottom:5px;
+}
+
+.trust-bar strong{
+color:var(--dark);
+font-size:1rem;
+}
+
+.trust-bar span{
+color:var(--gray);
+font-size:.9rem;
+}
+
+@media(max-width:992px){
+.reviews-stats,
+.trust-bar{
+grid-template-columns:1fr;
+}
+
+.trust-bar div{
+border-right:none;
+border-bottom:1px solid var(--border);
+padding-bottom:18px;
+}
+
+.trust-bar div:last-child{
+border-bottom:none;
+padding-bottom:0;
+}
+}
+
+@media(max-width:768px){
+.reviews-header h2{
+font-size:2.4rem;
+}
+
+.stat-item{
+align-items:flex-start;
+}
+
+.review-premium-card{
+padding:34px 26px 28px;
+}
+}
+
+
 </style>
 
 </head>
@@ -442,7 +721,7 @@ height:75px;
 </li>
 
 <li class="nav-item">
-<a class="nav-link" href="#projetos">Projetos</a>
+<a class="nav-link" href="#avaliacoes">Avaliações</a>
 </li>
 
 <li class="nav-item">
@@ -666,85 +945,145 @@ Projetos de monitoramento, controle de acesso e sistemas inteligentes de seguran
 
 </section>
 
-<section class="reviews" id="avaliacoes">
+<section class="reviews-premium" id="avaliacoes">
 
 <div class="container">
 
-<div class="section-title text-center reveal">
+<div class="reviews-header reveal">
+<div class="reviews-badge">
+<i class="fas fa-comments"></i>
+A opinião de quem confia
+</div>
 
-<h2>
-Avaliações de <span>Clientes</span>
-</h2>
+<h2>Avaliações de <span>Clientes</span></h2>
 
 <p>
 A confiança dos nossos clientes é o que fortalece cada projeto entregue pela AUTEC.
 </p>
+</div>
+
+<div class="reviews-stats reveal">
+
+<div class="stat-item">
+<i class="fas fa-users"></i>
+<div>
+<strong>+50</strong>
+<span>Clientes atendidos</span>
+</div>
+</div>
+
+<div class="stat-item">
+<i class="fas fa-star"></i>
+<div>
+<strong>5.0</strong>
+<span>Avaliação média</span>
+</div>
+</div>
+
+<div class="stat-item">
+<i class="fas fa-shield-halved"></i>
+<div>
+<strong>100%</strong>
+<span>Compromisso</span>
+</div>
+</div>
 
 </div>
 
 <div class="row g-4">
 
 <div class="col-lg-4 col-md-6 reveal">
-<div class="review-card">
+<div class="review-premium-card">
+<div class="quote-icon">“</div>
 
 <div class="stars">
-<i class="fas fa-star"></i>
-<i class="fas fa-star"></i>
-<i class="fas fa-star"></i>
-<i class="fas fa-star"></i>
-<i class="fas fa-star"></i>
+<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
 </div>
 
 <p>
-“Serviço muito bem executado, com organização, atenção aos detalhes e ótimo conhecimento técnico.”
+Serviço muito bem executado, com organização, atenção aos detalhes e ótimo conhecimento técnico.
 </p>
 
+<div class="client-info">
+<div class="client-avatar">
+<i class="fas fa-home"></i>
+</div>
+<div>
 <h4>Cliente residencial</h4>
 <span>Projeto elétrico</span>
-
+</div>
+</div>
 </div>
 </div>
 
 <div class="col-lg-4 col-md-6 reveal">
-<div class="review-card">
+<div class="review-premium-card featured">
+<div class="quote-icon">“</div>
 
 <div class="stars">
-<i class="fas fa-star"></i>
-<i class="fas fa-star"></i>
-<i class="fas fa-star"></i>
-<i class="fas fa-star"></i>
-<i class="fas fa-star"></i>
+<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
 </div>
 
 <p>
-“A AUTEC demonstrou profissionalismo desde o primeiro contato, explicando tudo com clareza e segurança.”
+A AUTEC demonstrou profissionalismo desde o primeiro contato, explicando tudo com clareza e segurança.
 </p>
 
+<div class="client-info">
+<div class="client-avatar">
+<i class="fas fa-building"></i>
+</div>
+<div>
 <h4>Cliente comercial</h4>
 <span>Automação e infraestrutura</span>
-
+</div>
+</div>
 </div>
 </div>
 
 <div class="col-lg-4 col-md-6 reveal">
-<div class="review-card">
+<div class="review-premium-card">
+<div class="quote-icon">“</div>
 
 <div class="stars">
-<i class="fas fa-star"></i>
-<i class="fas fa-star"></i>
-<i class="fas fa-star"></i>
-<i class="fas fa-star"></i>
-<i class="fas fa-star"></i>
+<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
 </div>
 
 <p>
-“Gostamos muito da solução apresentada. Atendimento rápido, técnico e com excelente acabamento.”
+Gostamos muito da solução apresentada. Atendimento rápido, técnico e com excelente acabamento.
 </p>
 
+<div class="client-info">
+<div class="client-avatar">
+<i class="fas fa-industry"></i>
+</div>
+<div>
 <h4>Cliente industrial</h4>
 <span>Segurança e painéis elétricos</span>
+</div>
+</div>
+</div>
+</div>
 
 </div>
+
+<div class="trust-bar reveal">
+
+<div>
+<i class="fas fa-user-tie"></i>
+<strong>Profissionais qualificados</strong>
+<span>Equipe técnica especializada</span>
+</div>
+
+<div>
+<i class="fas fa-medal"></i>
+<strong>Compromisso e qualidade</strong>
+<span>Padrão AUTEC em cada detalhe</span>
+</div>
+
+<div>
+<i class="fas fa-handshake"></i>
+<strong>Transparência</strong>
+<span>Do início ao pós-entrega</span>
 </div>
 
 </div>
