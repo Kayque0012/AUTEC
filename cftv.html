@@ -381,8 +381,13 @@ flex-direction:column;
 </li>
 
 <li class="nav-item ms-lg-4 mt-3 mt-lg-0">
-<a href="https://wa.me/5531972368967" target="_blank" class="btn-main">
-<i class="fab fa-whatsapp"></i>
+<a href="https://wa.me/5531972368967?text=Olá,%20gostaria%20de%20solicitar%20um%20orçamento%20para%20sistema%20cftv."
+ target="_blank"
+   class="btn-main"
+   onclick="gtag('event', 'clique_whatsapp_cftv', {
+     'event_category': 'Contato',
+     'event_label': 'cftv'
+   });">
 Solicitar orçamento
 </a>
 </li>
