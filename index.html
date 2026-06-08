@@ -747,8 +747,12 @@ padding:34px 26px 28px;
 <li class="nav-item ms-lg-4 mt-3 mt-lg-0">
 
 <a href="https://wa.me/5531972368967"
-target="_blank"
-class="btn-main">
+   target="_blank"
+   class="btn-main"
+   onclick="gtag('event', 'clique_whatsapp', {
+      'event_category': 'Contato',
+      'event_label': 'Botao Principal'
+   });">
 
 <i class="fab fa-whatsapp"></i>
 Solicitar orçamento
