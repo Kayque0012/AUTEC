@@ -431,10 +431,7 @@ height:75px;
 <a href="https://wa.me/5531972368967?text=Ola%2C%20gostaria%20de%20solicitar%20uma%20analise%20para%20adequacao%20NR12."
    target="_blank"
    class="btn-main"
-   onclick="gtag('event', 'clique_whatsapp_nr12', {
-      'event_category': 'Contato',
-      'event_label': 'NR12'
-   });">
+   onclick="return gtagSendEvent(this.href);"
   
 <i class="fab fa-whatsapp"></i>
 Solicitar análise
