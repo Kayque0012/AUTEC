@@ -760,10 +760,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <a href="https://wa.me/5531972368967"
    target="_blank"
    class="btn-main"
-   onclick="gtag('event', 'clique_whatsapp', {
-      'event_category': 'Contato',
-      'event_label': 'Botao Principal'
-   });">
+  onclick="return gtagSendEvent(this.href);"
 
 <i class="fab fa-whatsapp"></i>
 Solicitar orçamento
