@@ -423,10 +423,7 @@ height:75px;
 <a href="https://wa.me/5531972368967?text=Olá,%20gostaria%20de%20solicitar%20um%20orçamento%20para%20painéis%20elétricos."
    target="_blank"
    class="btn-main"
-   onclick="gtag('event', 'clique_whatsapp_paineis_eletricos', {
-      'event_category': 'Contato',
-      'event_label': 'Paineis Eletricos'
-   });">
+  onclick="return gtagSendEvent(this.href);">
 Solicitar orçamento
 </a>
 Solicitar orçamento
