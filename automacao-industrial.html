@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 
 <head>
-<!-- Google tag (gtag.js) -->
+  <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-540DXT0KW4"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -15,19 +15,19 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Adequação NR12 em BH | Autec</title>
+<title>Automação Industrial em BH | Autec</title>
 
 <meta name="description"
-content="Adequação NR12 em Belo Horizonte e região metropolitana. Segurança de máquinas, cortinas de luz, relés de segurança, comandos bimanuais, painéis elétricos e análise técnica.">
+content="Automação industrial em Belo Horizonte e região metropolitana. Programação de CLPs Siemens, S7-1200, S7-1500, ET200, PLCs de segurança, retrofit, NR12, IHMs e integração industrial.">
 
 <meta name="keywords"
-content="adequação NR12 BH, laudo NR12 Belo Horizonte, segurança de máquinas, cortina de luz, relé de segurança, comando bimanual, automação industrial BH">
+content="automação industrial BH, programação PLC Siemens, S7-1200, S7-1500, ET200, PLC de segurança, retrofit industrial, automação automotiva, NR12, IHM Siemens, PROFINET">
 
 <meta name="author" content="Autec">
 
-<meta property="og:title" content="Adequação NR12 em BH | Autec">
+<meta property="og:title" content="Automação Industrial em BH | Autec">
 <meta property="og:description"
-content="Soluções em segurança de máquinas, análise técnica, adequação elétrica e automação industrial conforme NR12.">
+content="Programação de CLPs, PLCs de segurança, retrofit industrial, NR12, IHMs e integração para máquinas e processos industriais.">
 
 <meta property="og:type" content="website">
 
@@ -137,8 +137,8 @@ color:var(--white);
 padding-top:220px;
 padding-bottom:150px;
 background:
-linear-gradient(rgba(248,250,252,0.82), rgba(248,250,252,0.92)),
-url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1920&auto=format&fit=crop')
+linear-gradient(rgba(248,250,252,0.82), rgba(248,250,252,0.94)),
+url('https://images.unsplash.com/photo-1516192518150-0d8fee5425e3?q=80&w=1920&auto=format&fit=crop')
 center/cover;
 }
 
@@ -146,7 +146,7 @@ center/cover;
 font-size:4rem;
 font-weight:800;
 line-height:1.2;
-max-width:900px;
+max-width:950px;
 margin-bottom:25px;
 }
 
@@ -155,7 +155,7 @@ color:var(--primary);
 }
 
 .hero p{
-max-width:760px;
+max-width:800px;
 font-size:1.1rem;
 margin-bottom:40px;
 }
@@ -246,9 +246,40 @@ align-items:flex-start;
 color:var(--gray);
 }
 
+.dark-section .check-list li{
+color:#cbd5e1;
+}
+
 .check-list i{
 color:var(--success);
 margin-top:5px;
+}
+
+.tech-card{
+background:linear-gradient(145deg,#ffffff,#eef4ff);
+border:1px solid rgba(255,255,255,0.08);
+border-top:5px solid var(--primary);
+border-radius:22px;
+padding:35px;
+height:100%;
+box-shadow:0 15px 35px rgba(0,59,130,0.18);
+transition:.35s ease;
+}
+
+.tech-card:hover{
+transform:translateY(-8px);
+box-shadow:0 20px 45px rgba(0,59,130,0.28);
+}
+
+.tech-card h4{
+color:var(--primary);
+margin-bottom:15px;
+font-size:1.4rem;
+}
+
+.tech-card p{
+color:#334155;
+font-weight:500;
 }
 
 .process-step{
@@ -257,7 +288,6 @@ border:1px solid var(--border);
 border-radius:18px;
 padding:35px 30px;
 height:100%;
-position:relative;
 box-shadow:0 10px 30px rgba(0,0,0,0.03);
 }
 
@@ -280,6 +310,14 @@ border-radius:22px;
 box-shadow:0 20px 50px rgba(0,0,0,0.08);
 }
 
+.highlight-box{
+background:var(--white);
+border-left:6px solid var(--primary);
+border-radius:18px;
+padding:40px;
+box-shadow:0 15px 40px rgba(0,0,0,0.05);
+}
+
 .cta-box{
 background:var(--primary);
 padding:70px 40px;
@@ -291,7 +329,7 @@ box-shadow:0 20px 50px rgba(0,59,130,0.2);
 
 .cta-box p{
 color:rgba(255,255,255,0.9);
-max-width:750px;
+max-width:780px;
 margin:0 auto 35px;
 }
 
@@ -400,8 +438,8 @@ height:75px;
 
 </style>
 
-<link rel="canonical" href="https://autecsolutions.com.br/nr12.html">
-<meta property="og:url" content="https://autecsolutions.com.br/nr12.html">
+<link rel="canonical" href="https://autecsolutions.com.br/automacao-industrial.html">
+<meta property="og:url" content="https://autecsolutions.com.br/automacao-industrial.html">
 <script src="assets/contact-tracking.js" defer></script>
 </head>
 
@@ -424,20 +462,20 @@ height:75px;
 <ul class="navbar-nav align-items-lg-center">
 
 <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
-<li class="nav-item"><a class="nav-link" href="#problemas">Riscos</a></li>
-<li class="nav-item"><a class="nav-link" href="#avaliacao">Avaliação</a></li>
+<li class="nav-item"><a class="nav-link" href="#solucoes">Soluções</a></li>
+<li class="nav-item"><a class="nav-link" href="#tecnologias">Tecnologias</a></li>
 <li class="nav-item"><a class="nav-link" href="#processo">Como Funciona</a></li>
 <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
 
 <li class="nav-item ms-lg-4 mt-3 mt-lg-0">
-
-<a href="https://wa.me/5531972368967?text=Ola%2C%20gostaria%20de%20solicitar%20uma%20analise%20para%20adequacao%20NR12."
+  
+<a href="https://wa.me/5531972368967?text=Ola%2C%20gostaria%20de%20solicitar%20um%20orcamento%20para%20automacao%20industrial."
    target="_blank"
    class="btn-main"
-  
+
  rel="noopener noreferrer">
 <i class="fab fa-whatsapp"></i>
-Solicitar análise
+Solicitar automação
 
 </a>
 
@@ -459,26 +497,27 @@ Solicitar análise
 
 <div class="hero-badges">
 
-<span class="hero-badge">BH e Região Metropolitana</span>
-<span class="hero-badge">Segurança de Máquinas</span>
-<span class="hero-badge">Automação Industrial</span>
+<span class="hero-badge">Indústria Automotiva</span>
+<span class="hero-badge">CLP Siemens</span>
+<span class="hero-badge">PLC de Segurança</span>
+<span class="hero-badge">Retrofit Industrial</span>
 
 </div>
 
 <h1>
-Adequação <span>NR12</span> para Máquinas Industriais
+Automação <span>Industrial</span> para Máquinas e Processos
 </h1>
 
 <p>
-A AUTEC realiza soluções em segurança de máquinas para empresas em Belo Horizonte e região metropolitana, com análise técnica, identificação de riscos, instalação de dispositivos de segurança, adequações elétricas e integração com sistemas industriais.
+A AUTEC atua com soluções em automação industrial para máquinas, linhas produtivas e processos, com foco em programação de CLPs, IHMs, redes industriais, retrofit, segurança de máquinas e integração para ambientes industriais de alta exigência técnica.
 </p>
 
-<a href="https://wa.me/5531972368967?text=Olá,%20gostaria%20de%20solicitar%20uma%20análise%20para%20adequação%20NR12."
+<a href="https://wa.me/5531972368967?text=Olá,%20gostaria%20de%20solicitar%20um%20orçamento%20para%20automação%20industrial."
 target="_blank"
 class="btn-main" rel="noopener noreferrer">
 
 <i class="fab fa-whatsapp"></i>
-Solicitar análise NR12
+Solicitar orçamento
 
 </a>
 
@@ -488,18 +527,18 @@ Solicitar análise NR12
 
 </section>
 
-<section id="problemas">
+<section id="solucoes">
 
 <div class="container">
 
 <div class="section-title text-center reveal">
 
 <h2>
-Sua máquina apresenta algum <span>risco?</span>
+Soluções em <span>Automação Industrial</span>
 </h2>
 
 <p>
-Máquinas sem adequação podem gerar riscos operacionais, paradas, acidentes e problemas em auditorias.
+Integração técnica para aumentar confiabilidade, segurança, produtividade e controle dos processos industriais.
 </p>
 
 </div>
@@ -508,49 +547,49 @@ Máquinas sem adequação podem gerar riscos operacionais, paradas, acidentes e 
 
 <div class="col-lg-4 col-md-6 reveal">
 <div class="info-card">
-<div class="info-icon"><i class="fas fa-triangle-exclamation"></i></div>
-<h4>Proteções inexistentes</h4>
-<p>Máquinas com partes móveis expostas, acesso a zonas perigosas ou proteções removidas.</p>
+<div class="info-icon"><i class="fas fa-microchip"></i></div>
+<h4>Programação de CLPs</h4>
+<p>Desenvolvimento, alteração e diagnóstico de lógicas em CLPs industriais, com foco em aplicações Siemens e ambientes produtivos.</p>
 </div>
 </div>
 
 <div class="col-lg-4 col-md-6 reveal">
 <div class="info-card">
-<div class="info-icon"><i class="fas fa-hand"></i></div>
-<h4>Bimanual irregular</h4>
-<p>Comando bimanual sem antiamarramento, sem simultaneidade ou sem monitoramento adequado.</p>
+<div class="info-icon"><i class="fas fa-display"></i></div>
+<h4>IHMs e Supervisão</h4>
+<p>Criação e ajustes de telas de operação, alarmes, comandos e visualização de processos industriais.</p>
 </div>
 </div>
 
 <div class="col-lg-4 col-md-6 reveal">
 <div class="info-card">
-<div class="info-icon"><i class="fas fa-bolt"></i></div>
-<h4>Painel sem segurança</h4>
-<p>Ausência de relés de segurança, CLP de segurança, contatores redundantes ou lógica monitorada.</p>
+<div class="info-icon"><i class="fas fa-network-wired"></i></div>
+<h4>Redes Industriais</h4>
+<p>Integração com redes industriais como PROFINET, comunicação entre dispositivos, remotas e painéis de automação.</p>
 </div>
 </div>
 
 <div class="col-lg-4 col-md-6 reveal">
 <div class="info-card">
-<div class="info-icon"><i class="fas fa-eye"></i></div>
-<h4>Cortina de luz inoperante</h4>
-<p>Cortinas instaladas sem atuação real na parada da máquina ou sem distância segura correta.</p>
+<div class="info-icon"><i class="fas fa-shield-halved"></i></div>
+<h4>PLC de Segurança</h4>
+<p>Programação e integração de sistemas de segurança para máquinas, incluindo PLCs de segurança, relés e dispositivos NR12.</p>
 </div>
 </div>
 
 <div class="col-lg-4 col-md-6 reveal">
 <div class="info-card">
-<div class="info-icon"><i class="fas fa-rotate-left"></i></div>
-<h4>Partida inesperada</h4>
-<p>Risco de religamento automático após queda de energia, reset ou retorno de condição segura.</p>
+<div class="info-icon"><i class="fas fa-rotate"></i></div>
+<h4>Retrofit Industrial</h4>
+<p>Modernização de máquinas antigas, atualização de comandos, painéis, sensores, CLPs e sistemas de segurança.</p>
 </div>
 </div>
 
 <div class="col-lg-4 col-md-6 reveal">
 <div class="info-card">
-<div class="info-icon"><i class="fas fa-file-signature"></i></div>
-<h4>Falta de documentação</h4>
-<p>Ausência de inventário, análise de risco, diagramas atualizados ou evidências de adequação.</p>
+<div class="info-icon"><i class="fas fa-screwdriver-wrench"></i></div>
+<h4>Diagnóstico Técnico</h4>
+<p>Análise de falhas, testes em campo, ajustes de lógica, startup de máquinas e suporte técnico em automação.</p>
 </div>
 </div>
 
@@ -560,7 +599,7 @@ Máquinas sem adequação podem gerar riscos operacionais, paradas, acidentes e 
 
 </section>
 
-<section class="dark-section" id="avaliacao">
+<section class="dark-section" id="tecnologias">
 
 <div class="container">
 
@@ -571,25 +610,24 @@ Máquinas sem adequação podem gerar riscos operacionais, paradas, acidentes e 
 <div class="section-title">
 
 <h2>
-O que a <span>AUTEC</span> avalia na NR12?
+Tecnologias e <span>plataformas</span>
 </h2>
 
 <p>
-Nosso trabalho busca identificar os pontos críticos da máquina e propor soluções práticas para elevar o nível de segurança e confiabilidade da operação.
+A AUTEC trabalha com tecnologias aplicadas ao chão de fábrica, máquinas industriais e sistemas de segurança.
 </p>
 
 </div>
 
 <ul class="check-list">
 
-<li><i class="fas fa-check-circle"></i> Sistemas de parada de emergência.</li>
-<li><i class="fas fa-check-circle"></i> Proteções físicas fixas e móveis.</li>
-<li><i class="fas fa-check-circle"></i> Cortinas de luz e sensores de segurança.</li>
-<li><i class="fas fa-check-circle"></i> Comando bimanual e antiamarramento.</li>
-<li><i class="fas fa-check-circle"></i> Relés e CLPs de segurança.</li>
-<li><i class="fas fa-check-circle"></i> Contatores redundantes e monitoramento.</li>
-<li><i class="fas fa-check-circle"></i> Painéis elétricos e documentação técnica.</li>
-<li><i class="fas fa-check-circle"></i> Riscos de partida inesperada e falhas perigosas.</li>
+<li><i class="fas fa-check-circle"></i> CLPs Siemens família S7.</li>
+<li><i class="fas fa-check-circle"></i> S7-1200 e S7-1500.</li>
+<li><i class="fas fa-check-circle"></i> Remotas ET200 e módulos descentralizados.</li>
+<li><i class="fas fa-check-circle"></i> IHMs Siemens e sistemas de operação.</li>
+<li><i class="fas fa-check-circle"></i> Redes PROFINET e integração de dispositivos.</li>
+<li><i class="fas fa-check-circle"></i> PLCs de segurança e relés de segurança.</li>
+<li><i class="fas fa-check-circle"></i> Integração com cortinas de luz, scanners, bimanuais e intertravamentos.</li>
 
 </ul>
 
@@ -597,12 +635,86 @@ Nosso trabalho busca identificar os pontos críticos da máquina e propor soluç
 
 <div class="col-lg-6 reveal">
 
+<div class="row g-4">
+
+<div class="col-md-6">
+<div class="tech-card">
+<h4>Siemens S7</h4>
+<p>Aplicações com CLPs industriais Siemens, incluindo S7-1200, S7-1500 e arquiteturas com ET200.</p>
+</div>
+</div>
+
+<div class="col-md-6">
+<div class="tech-card">
+<h4>PLC de Segurança</h4>
+<p>Integração de segurança de máquinas com lógicas monitoradas, dispositivos NR12 e sistemas redundantes.</p>
+</div>
+</div>
+
+<div class="col-md-6">
+<div class="tech-card">
+<h4>PROFINET</h4>
+<p>Comunicação industrial entre CLPs, remotas, inversores, IHMs e dispositivos inteligentes.</p>
+</div>
+</div>
+
+<div class="col-md-6">
+<div class="tech-card">
+<h4>Retrofit</h4>
+<p>Atualização de máquinas e painéis antigos para tecnologias mais modernas, seguras e confiáveis.</p>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="container">
+
+<div class="row align-items-center g-5">
+
+<div class="col-lg-6 reveal">
+
 <div class="image-box">
 
 <img
-src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?q=80&w=1200&auto=format&fit=crop"
+src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?q=80&w=1200&auto=format&fit=crop"
 loading="lazy"
-alt="Adequação NR12 em máquina industrial">
+alt="Automação industrial e painel de controle">
+
+</div>
+
+</div>
+
+<div class="col-lg-6 reveal">
+
+<div class="highlight-box">
+
+<h2>
+Atuação voltada ao <span style="color:var(--primary);">setor industrial automotivo</span>
+</h2>
+
+<p>
+A AUTEC atende com prioridade aplicações industriais de alta exigência técnica, incluindo o setor automotivo, onde disponibilidade, segurança, repetibilidade e confiabilidade operacional são essenciais.
+</p>
+
+<ul class="check-list">
+
+<li><i class="fas fa-check-circle"></i> Máquinas industriais e linhas produtivas.</li>
+<li><i class="fas fa-check-circle"></i> Integração de segurança com automação.</li>
+<li><i class="fas fa-check-circle"></i> Diagnóstico e melhoria de processos.</li>
+<li><i class="fas fa-check-circle"></i> Suporte a manutenção e engenharia.</li>
+<li><i class="fas fa-check-circle"></i> Retrofit de comandos e painéis.</li>
+
+</ul>
 
 </div>
 
@@ -625,7 +737,7 @@ Como funciona o <span>atendimento?</span>
 </h2>
 
 <p>
-Um processo claro para transformar riscos em soluções técnicas aplicáveis.
+Um processo técnico para entender a máquina, propor solução e executar com segurança.
 </p>
 
 </div>
@@ -635,32 +747,32 @@ Um processo claro para transformar riscos em soluções técnicas aplicáveis.
 <div class="col-lg-3 col-md-6 reveal">
 <div class="process-step">
 <div class="step-number">1</div>
-<h4>Visita técnica</h4>
-<p>Levantamento inicial da máquina, operação, riscos aparentes e necessidades do cliente.</p>
+<h4>Levantamento</h4>
+<p>Entendimento da máquina, sensores, atuadores, painel, lógica atual e necessidade do processo.</p>
 </div>
 </div>
 
 <div class="col-lg-3 col-md-6 reveal">
 <div class="process-step">
 <div class="step-number">2</div>
-<h4>Análise</h4>
-<p>Identificação dos pontos críticos, dispositivos necessários e melhorias técnicas recomendadas.</p>
+<h4>Projeto</h4>
+<p>Definição da arquitetura de automação, CLP, IHM, redes, segurança e componentes necessários.</p>
 </div>
 </div>
 
 <div class="col-lg-3 col-md-6 reveal">
 <div class="process-step">
 <div class="step-number">3</div>
-<h4>Proposta</h4>
-<p>Definição do escopo de adequação, materiais, painéis, lógica de segurança e execução.</p>
+<h4>Programação</h4>
+<p>Desenvolvimento da lógica, telas, intertravamentos, alarmes, sequências e sistemas de segurança.</p>
 </div>
 </div>
 
 <div class="col-lg-3 col-md-6 reveal">
 <div class="process-step">
 <div class="step-number">4</div>
-<h4>Execução</h4>
-<p>Instalação, adequação elétrica, integração de segurança e testes funcionais da solução.</p>
+<h4>Startup</h4>
+<p>Testes funcionais, ajustes em campo, validação de operação e apoio na entrega técnica.</p>
 </div>
 </div>
 
@@ -678,37 +790,37 @@ Um processo claro para transformar riscos em soluções técnicas aplicáveis.
 
 <div class="col-lg-6 reveal">
 
-<div class="image-box">
-
-<img
-src="https://images.unsplash.com/photo-1581092162384-8987c1d64718?q=80&w=1200&auto=format&fit=crop"
-loading="lazy"
-alt="Painel elétrico de segurança">
-
-</div>
-
-</div>
-
-<div class="col-lg-6 reveal">
-
 <div class="section-title">
 
 <h2>
-Por que adequar sua máquina à <span>NR12?</span>
+Por que automatizar com a <span>AUTEC?</span>
 </h2>
 
 </div>
 
 <ul class="check-list">
 
-<li><i class="fas fa-check-circle"></i> Reduz riscos de acidentes com operadores.</li>
-<li><i class="fas fa-check-circle"></i> Melhora a segurança operacional da máquina.</li>
-<li><i class="fas fa-check-circle"></i> Aumenta a confiabilidade do processo produtivo.</li>
-<li><i class="fas fa-check-circle"></i> Organiza a parte elétrica e a lógica de segurança.</li>
-<li><i class="fas fa-check-circle"></i> Prepara melhor a empresa para auditorias e fiscalizações.</li>
-<li><i class="fas fa-check-circle"></i> Valoriza a imagem técnica e profissional da operação.</li>
+<li><i class="fas fa-check-circle"></i> Mais controle sobre máquinas e processos.</li>
+<li><i class="fas fa-check-circle"></i> Menos paradas por falhas elétricas ou lógicas.</li>
+<li><i class="fas fa-check-circle"></i> Integração entre automação e segurança NR12.</li>
+<li><i class="fas fa-check-circle"></i> Diagnóstico técnico mais rápido e organizado.</li>
+<li><i class="fas fa-check-circle"></i> Modernização de equipamentos antigos.</li>
+<li><i class="fas fa-check-circle"></i> Melhor suporte para manutenção e engenharia.</li>
 
 </ul>
+
+</div>
+
+<div class="col-lg-6 reveal">
+
+<div class="image-box">
+
+<img
+src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1200&auto=format&fit=crop"
+loading="lazy"
+alt="Tecnologia aplicada à automação industrial">
+
+</div>
 
 </div>
 
@@ -725,19 +837,19 @@ Por que adequar sua máquina à <span>NR12?</span>
 <div class="cta-box reveal">
 
 <h2>
-Precisa adequar uma máquina ou linha de produção?
+Precisa automatizar uma máquina ou realizar retrofit industrial?
 </h2>
 
 <p>
-Fale com a AUTEC pelo WhatsApp e solicite uma análise técnica para máquinas industriais em Belo Horizonte e região metropolitana.
+Fale com a AUTEC pelo WhatsApp e solicite uma análise para programação de CLP, PLC de segurança, integração industrial, NR12 ou modernização de máquinas em Belo Horizonte e região metropolitana.
 </p>
 
-<a href="https://wa.me/5531972368967?text=Olá,%20gostaria%20de%20solicitar%20uma%20análise%20para%20adequação%20NR12."
+<a href="https://wa.me/5531972368967?text=Olá,%20gostaria%20de%20solicitar%20um%20orçamento%20para%20automação%20industrial."
 target="_blank"
 class="btn-main" rel="noopener noreferrer">
 
 <i class="fab fa-whatsapp"></i>
-Solicitar análise pelo WhatsApp
+Solicitar orçamento pelo WhatsApp
 
 </a>
 
@@ -770,8 +882,8 @@ Atendimento em Belo Horizonte e Região Metropolitana.
 <div class="col-lg-6 text-lg-end">
 
 <p><a href="index.html">Início</a></p>
-<p><a href="#problemas">Riscos</a></p>
-<p><a href="#avaliacao">Avaliação</a></p>
+<p><a href="#solucoes">Soluções</a></p>
+<p><a href="#tecnologias">Tecnologias</a></p>
 <p><a href="#contato">Contato</a></p>
 
 </div>
@@ -782,7 +894,7 @@ Atendimento em Belo Horizonte e Região Metropolitana.
 
 </footer>
 
-<a href="https://wa.me/5531972368967?text=Olá,%20gostaria%20de%20solicitar%20uma%20análise%20para%20adequação%20NR12."
+<a href="https://wa.me/5531972368967?text=Olá,%20gostaria%20de%20solicitar%20um%20orçamento%20para%20automação%20industrial."
 target="_blank"
 class="whatsapp-float" rel="noopener noreferrer" aria-label="Solicitar orçamento pelo WhatsApp">
 

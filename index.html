@@ -711,6 +711,9 @@ padding:34px 26px 28px;
 
 </style>
 
+<meta property="og:url" content="https://autecsolutions.com.br/">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "LocalBusiness", "@id": "https://autecsolutions.com.br/#empresa", "name": "AUTEC", "url": "https://autecsolutions.com.br/", "telephone": "+5531972368967", "logo": "https://autecsolutions.com.br/logo.png", "areaServed": {"@type": "Place", "name": "Belo Horizonte e região metropolitana"}}</script>
+<script src="assets/contact-tracking.js" defer></script>
 </head>
 
 <body>
@@ -727,7 +730,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <img src="logo.png?v=2" alt="Logo Autec">
 </a>
 
-<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Abrir menu de navegação">
 <i class="fas fa-bars"></i>
 </button>
 
@@ -760,8 +763,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <a href="https://wa.me/5531972368967"
    target="_blank"
    class="btn-main"
-  onclick="return gtagSendEvent(this.href);"
 
+ rel="noopener noreferrer">
 <i class="fab fa-whatsapp"></i>
 Solicitar orçamento
 
@@ -793,7 +796,7 @@ A AUTEC atua em Belo Horizonte e região metropolitana oferecendo soluções mod
 
 <a href="https://wa.me/5531972368967"
 target="_blank"
-class="btn-main">
+class="btn-main" rel="noopener noreferrer">
 
 <i class="fab fa-whatsapp"></i>
 Solicitar orçamento
@@ -826,7 +829,7 @@ Tecnologia, engenharia e inovação aplicadas a projetos residenciais, comerciai
 
 <div class="col-lg-4 col-md-6 reveal">
 
-<a href="projetos%20eletricos.html" class="text-decoration-none text-dark d-block h-100">
+<a href="projetos-eletricos.html" class="text-decoration-none text-dark d-block h-100">
 
 <div class="service-card">
 
@@ -849,7 +852,7 @@ Desenvolvimento de projetos elétricos residenciais, comerciais e industriais co
 </div>
 <div class="col-lg-4 col-md-6 reveal">
 
-<a href="automacao%20industrial.html" class="text-decoration-none text-dark d-block h-100">
+<a href="automacao-industrial.html" class="text-decoration-none text-dark d-block h-100">
 
 <div class="service-card">
 
@@ -872,7 +875,7 @@ Integração de CLPs, IHMs, sensores e sistemas industriais inteligentes para ot
 </div>
 <div class="col-lg-4 col-md-6 reveal">
 
-<a href="casas%20inteligentes.html" class="text-decoration-none text-dark d-block h-100">
+<a href="casas-inteligentes.html" class="text-decoration-none text-dark d-block h-100">
 
 <div class="service-card">
 
@@ -918,7 +921,7 @@ Soluções em segurança de máquinas com relés de segurança, bimanual, cortin
 
 <div class="col-lg-4 col-md-6 reveal">
 
-<a href="paineis eletricos.html" class="text-decoration-none text-dark d-block h-100">
+<a href="paineis-eletricos.html" class="text-decoration-none text-dark d-block h-100">
 
 <div class="service-card">
 
@@ -1160,7 +1163,7 @@ Nosso compromisso é entregar soluções inteligentes que agreguem desempenho, c
 
 <a href="https://wa.me/5531972368967"
 target="_blank"
-class="btn-main mt-4">
+class="btn-main mt-4" rel="noopener noreferrer">
 
 <i class="fab fa-whatsapp"></i>
 Falar com nossa equipe
@@ -1279,7 +1282,7 @@ Entre em contato diretamente pelo WhatsApp e fale com nossa equipe técnica.
 
 <a href="https://wa.me/5531972368967"
 target="_blank"
-class="btn-main">
+class="btn-main" rel="noopener noreferrer">
 
 <i class="fab fa-whatsapp"></i>
 Chamar no WhatsApp
@@ -1300,7 +1303,7 @@ Chamar no WhatsApp
 
 <div class="col-lg-6 mb-4 mb-lg-0">
 
-<img src="logo.png?v=2" class="footer-logo" alt="Logo Autec">
+<img src="logo.png?v=2" class="footer-logo" alt="Logo Autec" loading="lazy" decoding="async">
 
 <p>
 AUTEC © 2026 — Engenharia Elétrica e Automação Industrial.
@@ -1329,7 +1332,7 @@ Atendimento em Belo Horizonte e Região Metropolitana.
 
 <a href="https://wa.me/5531972368967"
 target="_blank"
-class="whatsapp-float">
+class="whatsapp-float" rel="noopener noreferrer" aria-label="Solicitar orçamento pelo WhatsApp">
 
 <i class="fab fa-whatsapp"></i>
 
@@ -1387,24 +1390,6 @@ const counterObserver = new IntersectionObserver((entries) => {
 }, { threshold: 0.5 });
 
 counters.forEach(counter => counterObserver.observe(counter));
-</script>
-  <!-- Google tag (gtag.js) event - delayed navigation helper -->
-<script>
-  // Helper function to delay opening a URL until a gtag event is sent.
-  // Call it in response to an action that should navigate to a URL.
-  function gtagSendEvent(url) {
-    var callback = function () {
-      if (typeof url === 'string') {
-        window.location = url;
-      }
-    };
-    gtag('event', 'conversion_event_contact', {
-      'event_callback': callback,
-      'event_timeout': 2000,
-      // <event_parameters>
-    });
-    return false;
-  }
 </script>
 
 

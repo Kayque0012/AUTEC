@@ -14,9 +14,19 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>CFTV e Segurança Eletrônica | AUTEC</title>
+<title>Painéis Elétricos | AUTEC Engenharia e Automação</title>
 
-<meta name="description" content="Projetos e instalação de CFTV, câmeras de segurança, controle de acesso, alarmes e monitoramento para residências, empresas e indústrias.">
+<meta name="description"
+content="Montagem, reforma, retrofit e organização de painéis elétricos industriais e comerciais com qualidade, segurança e acabamento profissional.">
+
+<meta name="keywords"
+content="painéis elétricos, montagem de painéis, quadros elétricos, retrofit de painéis, CCM, comandos elétricos, automação industrial, Belo Horizonte">
+
+<meta name="author" content="AUTEC">
+
+<meta property="og:title" content="Painéis Elétricos | AUTEC">
+<meta property="og:description" content="Soluções em montagem, reforma e retrofit de painéis elétricos industriais e comerciais.">
+<meta property="og:type" content="website">
 
 <link rel="icon" type="image/png" href="favicon.png?v=4">
 
@@ -76,6 +86,7 @@ background:rgba(255,255,255,0.95);
 backdrop-filter:blur(12px);
 padding:5px 0;
 border-bottom:1px solid rgba(0,0,0,0.05);
+transition:.3s;
 }
 
 .navbar-brand img{
@@ -114,31 +125,64 @@ transform:translateY(-3px);
 color:var(--white);
 }
 
-.hero{
+.btn-outline-custom{
+border:2px solid var(--primary);
+color:var(--primary);
+padding:12px 28px;
+border-radius:12px;
+text-decoration:none;
+font-weight:700;
+display:inline-flex;
+align-items:center;
+gap:10px;
+transition:.3s;
+background:transparent;
+}
+
+.btn-outline-custom:hover{
+background:var(--primary);
+color:#fff;
+transform:translateY(-3px);
+}
+
+.hero-page{
 padding-top:220px;
-padding-bottom:150px;
+padding-bottom:140px;
 background:
 linear-gradient(rgba(248,250,252,0.82), rgba(248,250,252,0.94)),
-url('https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1920&auto=format&fit=crop')
+url('https://images.unsplash.com/photo-1581092162384-8987c1d64718?q=80&w=1920&auto=format&fit=crop')
 center/cover;
 }
 
-.hero h1{
+.hero-page .tag{
+display:inline-block;
+background:rgba(0,59,130,0.1);
+color:var(--primary);
+padding:10px 18px;
+border-radius:999px;
+font-weight:800;
+font-size:.85rem;
+text-transform:uppercase;
+letter-spacing:1px;
+margin-bottom:24px;
+}
+
+.hero-page h1{
 font-size:4rem;
 font-weight:800;
-line-height:1.2;
+line-height:1.15;
 max-width:900px;
 margin-bottom:25px;
 }
 
-.hero h1 span{
+.hero-page h1 span{
 color:var(--primary);
 }
 
-.hero p{
+.hero-page p{
 max-width:760px;
 font-size:1.1rem;
-margin-bottom:40px;
+margin-bottom:38px;
 }
 
 .section-title{
@@ -157,22 +201,28 @@ color:var(--primary);
 .info-card{
 background:var(--white);
 padding:38px 30px;
-border-radius:20px;
+border-radius:22px;
 border:1px solid var(--border);
 height:100%;
-box-shadow:0 10px 30px rgba(0,0,0,0.04);
-transition:.35s;
+transition:.35s ease;
+box-shadow:0 10px 30px rgba(0,0,0,0.035);
 }
 
 .info-card:hover{
 transform:translateY(-8px);
-box-shadow:0 20px 40px rgba(0,59,130,0.08);
+box-shadow:0 20px 45px rgba(0,59,130,0.08);
+border-color:rgba(0,59,130,0.18);
 }
 
 .info-card i{
 font-size:2.4rem;
 color:var(--primary);
-margin-bottom:20px;
+margin-bottom:22px;
+}
+
+.info-card h4{
+font-size:1.25rem;
+margin-bottom:14px;
 }
 
 .dark-section{
@@ -190,64 +240,57 @@ color:#cbd5e1;
 color:#fff;
 }
 
-.step{
-display:flex;
-gap:20px;
-margin-bottom:30px;
+.process-step{
+background:rgba(255,255,255,0.05);
+border:1px solid rgba(255,255,255,0.12);
+border-radius:22px;
+padding:30px;
+height:100%;
 }
 
 .step-number{
-min-width:52px;
-height:52px;
-border-radius:50%;
-background:var(--primary);
+width:48px;
+height:48px;
+background:var(--primary-hover);
 color:#fff;
 display:flex;
 align-items:center;
 justify-content:center;
+border-radius:50%;
 font-weight:800;
-font-size:1.2rem;
+margin-bottom:20px;
 }
 
-.feature-list{
+.image-box img{
+border-radius:24px;
+box-shadow:0 20px 50px rgba(0,0,0,0.08);
+}
+
+.check-list{
 list-style:none;
 padding:0;
 margin:0;
 }
 
-.feature-list li{
-margin-bottom:16px;
-color:#4b5563;
+.check-list li{
+display:flex;
+align-items:flex-start;
+gap:12px;
+margin-bottom:18px;
+color:var(--gray);
+line-height:1.7;
 }
 
-.feature-list li i{
+.check-list i{
 color:var(--primary);
-margin-right:10px;
-}
-
-.about-image img{
-border-radius:24px;
-box-shadow:0 20px 50px rgba(0,0,0,0.08);
+margin-top:5px;
 }
 
 .cta-box{
-background:var(--primary);
-color:#fff;
-padding:70px 40px;
-border-radius:28px;
-text-align:center;
-box-shadow:0 20px 50px rgba(0,59,130,0.18);
-}
-
-.cta-box p{
-color:#e5eefb;
-max-width:760px;
-margin:0 auto 35px;
-}
-
-.cta-box .btn-main{
-background:#fff;
-color:var(--primary);
+background:var(--white);
+padding:60px;
+border-radius:26px;
+box-shadow:0 15px 45px rgba(0,0,0,0.06);
 }
 
 footer{
@@ -306,23 +349,27 @@ transform:translateY(0);
 }
 
 @media(max-width:992px){
-.hero h1{
+.hero-page h1{
 font-size:3rem;
 }
 }
 
 @media(max-width:768px){
-.hero{
+.hero-page{
 text-align:center;
 padding-top:180px;
 }
 
-.hero h1{
-font-size:2.4rem;
+.hero-page h1{
+font-size:2.35rem;
 }
 
 .section-title h2{
 font-size:2rem;
+}
+
+.cta-box{
+padding:40px 25px;
 }
 
 .nav-link{
@@ -333,22 +380,16 @@ margin-top:10px;
 .navbar-brand img{
 height:75px;
 }
-
-.step{
-flex-direction:column;
-}
-
 }
 </style>
-<link rel="canonical" href="https://autecsolutions.com.br/cftv.html">
-<meta property="og:url" content="https://autecsolutions.com.br/cftv.html">
+<link rel="canonical" href="https://autecsolutions.com.br/paineis-eletricos.html">
+<meta property="og:url" content="https://autecsolutions.com.br/paineis-eletricos.html">
 <script src="assets/contact-tracking.js" defer></script>
 </head>
 
 <body>
 
 <nav class="navbar navbar-expand-lg fixed-top">
-
 <div class="container">
 
 <a class="navbar-brand" href="index.html">
@@ -360,11 +401,10 @@ flex-direction:column;
 </button>
 
 <div class="collapse navbar-collapse justify-content-end" id="menu">
-
 <ul class="navbar-nav align-items-lg-center">
 
 <li class="nav-item">
-<a class="nav-link" href="index.html">Início</a>
+<a class="nav-link" href="index.html#inicio">Início</a>
 </li>
 
 <li class="nav-item">
@@ -383,8 +423,7 @@ flex-direction:column;
 <a class="nav-link" href="index.html#contato">Contato</a>
 </li>
 
-<li class="nav-item ms-lg-4 mt-3 mt-lg-0">
-<a href="https://wa.me/5531972368967?text=Ola%2C%20gostaria%20de%20solicitar%20um%20orcamento%20para%20sistema%20de%20CFTV."
+<a href="https://wa.me/5531972368967?text=Olá,%20gostaria%20de%20solicitar%20um%20orçamento%20para%20painéis%20elétricos."
    target="_blank"
    class="btn-main" rel="noopener noreferrer">
 Solicitar orçamento
@@ -392,251 +431,250 @@ Solicitar orçamento
 </li>
 
 </ul>
-
 </div>
 
 </div>
-
 </nav>
 
-<section class="hero">
-
+<section class="hero-page">
 <div class="container">
-
 <div class="reveal active">
 
+<span class="tag">Montagem e retrofit</span>
+
 <h1>
-Projetos de <span>CFTV e Segurança Eletrônica</span>
+Painéis <span>Elétricos</span> com segurança, organização e acabamento profissional
 </h1>
 
 <p>
-Soluções completas em monitoramento, câmeras de segurança, controle de acesso e proteção patrimonial para residências, comércios, condomínios e ambientes industriais.
+A AUTEC desenvolve soluções em montagem, reforma, organização e retrofit de painéis elétricos para aplicações industriais, comerciais e sistemas de automação.
 </p>
 
+<div class="d-flex flex-wrap gap-3 justify-content-center justify-content-md-start">
 <a href="https://wa.me/5531972368967" target="_blank" class="btn-main" rel="noopener noreferrer">
 <i class="fab fa-whatsapp"></i>
 Solicitar orçamento
 </a>
 
+<a href="index.html#servicos" class="btn-outline-custom">
+<i class="fas fa-arrow-left"></i>
+Voltar aos serviços
+</a>
 </div>
 
 </div>
-
+</div>
 </section>
 
 <section>
-
 <div class="container">
 
 <div class="section-title text-center reveal">
-
 <h2>
-Soluções em <span>Segurança</span>
+Soluções em <span>Painéis Elétricos</span>
 </h2>
-
 <p>
-Desenvolvemos sistemas personalizados conforme o ambiente, o risco, a necessidade de monitoramento e o nível de controle desejado.
+Projetos pensados para facilitar manutenção, aumentar a confiabilidade da instalação e melhorar a segurança operacional.
 </p>
-
 </div>
 
 <div class="row g-4">
 
 <div class="col-lg-4 col-md-6 reveal">
 <div class="info-card">
-<i class="fas fa-video"></i>
-<h4>Câmeras de Segurança</h4>
-<p>Instalação de câmeras internas, externas, IP, Wi-Fi e sistemas com gravação local ou acesso remoto pelo celular.</p>
+<i class="fas fa-screwdriver-wrench"></i>
+<h4>Montagem de painéis</h4>
+<p>
+Montagem de quadros de comando, distribuição, automação e acionamento, com organização interna e identificação dos componentes.
+</p>
 </div>
 </div>
 
 <div class="col-lg-4 col-md-6 reveal">
 <div class="info-card">
-<i class="fas fa-network-wired"></i>
-<h4>Infraestrutura de Rede</h4>
-<p>Passagem de cabos, organização de pontos, configuração de DVR/NVR, switches, roteadores e estrutura para monitoramento.</p>
+<i class="fas fa-bolt"></i>
+<h4>Comandos elétricos</h4>
+<p>
+Aplicação de contatores, relés, disjuntores, bornes, fontes, sensores, inversores e dispositivos de proteção conforme a necessidade do projeto.
+</p>
 </div>
 </div>
 
 <div class="col-lg-4 col-md-6 reveal">
 <div class="info-card">
-<i class="fas fa-door-closed"></i>
-<h4>Controle de Acesso</h4>
-<p>Soluções com fechaduras eletrônicas, biometria, tags, senhas, controle de entrada e integração com sistemas de segurança.</p>
+<i class="fas fa-industry"></i>
+<h4>Painéis industriais</h4>
+<p>
+Soluções para máquinas, linhas produtivas, sistemas industriais e infraestrutura elétrica com foco em robustez e confiabilidade.
+</p>
 </div>
 </div>
 
 <div class="col-lg-4 col-md-6 reveal">
 <div class="info-card">
-<i class="fas fa-bell"></i>
-<h4>Alarmes e Sensores</h4>
-<p>Instalação de sensores de presença, abertura, sirenes e sistemas de alarme para proteção de áreas críticas.</p>
+<i class="fas fa-rotate"></i>
+<h4>Retrofit e reforma</h4>
+<p>
+Modernização de painéis antigos, substituição de componentes, melhoria de layout interno e adequação para novas demandas.
+</p>
 </div>
 </div>
 
 <div class="col-lg-4 col-md-6 reveal">
 <div class="info-card">
-<i class="fas fa-mobile-screen-button"></i>
-<h4>Acesso Remoto</h4>
-<p>Configuração para acompanhamento das câmeras pelo celular, tablet ou computador, de forma prática e segura.</p>
+<i class="fas fa-diagram-project"></i>
+<h4>Organização e identificação</h4>
+<p>
+Padronização de cabos, canaletas, bornes, etiquetas e componentes para facilitar diagnóstico, manutenção e futuras alterações.
+</p>
 </div>
 </div>
 
 <div class="col-lg-4 col-md-6 reveal">
 <div class="info-card">
 <i class="fas fa-shield-halved"></i>
-<h4>Segurança Integrada</h4>
-<p>Integração entre câmeras, alarmes, controle de acesso e automação para maior controle do ambiente.</p>
+<h4>Segurança e proteção</h4>
+<p>
+Aplicação de dispositivos de proteção elétrica e boas práticas de montagem para reduzir falhas, aquecimento e riscos operacionais.
+</p>
 </div>
 </div>
 
 </div>
 
 </div>
-
 </section>
 
 <section class="dark-section">
-
 <div class="container">
 
-<div class="row align-items-center g-5">
-
-<div class="col-lg-6 reveal">
-
-<div class="section-title">
-
+<div class="section-title text-center reveal">
 <h2>
-Muito além de apenas instalar câmeras
+Como a AUTEC conduz o <span>processo</span>
 </h2>
-
+<p>
+Um fluxo simples, técnico e transparente para entregar um painel funcional, limpo e confiável.
+</p>
 </div>
 
-<p>
-Um bom sistema de CFTV precisa ser pensado de forma estratégica: posicionamento correto das câmeras, qualidade da imagem, armazenamento, infraestrutura, pontos cegos, iluminação, acesso remoto e facilidade de manutenção.
-</p>
+<div class="row g-4">
 
-<p>
-A AUTEC une visão técnica, elétrica e de automação para entregar um sistema mais confiável, organizado e preparado para a necessidade real do cliente.
-</p>
-
-</div>
-
-<div class="col-lg-6 reveal">
-
-<div class="step">
+<div class="col-lg-3 col-md-6 reveal">
+<div class="process-step">
 <div class="step-number">1</div>
-<div>
-<h4>Análise do ambiente</h4>
-<p>Avaliamos os pontos de risco, acessos, áreas externas, áreas internas e necessidades de gravação.</p>
+<h4>Levantamento</h4>
+<p>
+Entendemos a necessidade da aplicação, cargas envolvidas, comandos, automação e ambiente de instalação.
+</p>
 </div>
 </div>
 
-<div class="step">
+<div class="col-lg-3 col-md-6 reveal">
+<div class="process-step">
 <div class="step-number">2</div>
-<div>
-<h4>Definição da solução</h4>
-<p>Indicamos os equipamentos, pontos de câmera, infraestrutura e forma de monitoramento mais adequada.</p>
+<h4>Planejamento</h4>
+<p>
+Definimos componentes, layout interno, proteções, organização dos cabos e melhor solução técnica.
+</p>
 </div>
 </div>
 
-<div class="step">
+<div class="col-lg-3 col-md-6 reveal">
+<div class="process-step">
 <div class="step-number">3</div>
-<div>
-<h4>Instalação e configuração</h4>
-<p>Realizamos a instalação, organização dos cabos, configuração do sistema e orientação de uso.</p>
+<h4>Montagem</h4>
+<p>
+Executamos a montagem com atenção à identificação, acabamento, conexões e boas práticas elétricas.
+</p>
+</div>
+</div>
+
+<div class="col-lg-3 col-md-6 reveal">
+<div class="process-step">
+<div class="step-number">4</div>
+<h4>Testes</h4>
+<p>
+Realizamos conferências, testes funcionais e validação antes da entrega ou instalação em campo.
+</p>
 </div>
 </div>
 
 </div>
 
 </div>
-
-</div>
-
 </section>
 
 <section>
-
 <div class="container">
 
 <div class="row align-items-center g-5">
 
 <div class="col-lg-6 reveal">
-
-<div class="about-image">
-
-<img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop" class="img-fluid" loading="lazy" alt="Monitoramento e tecnologia">
-
+<div class="image-box">
+<img
+src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?q=80&w=1200&auto=format&fit=crop"
+class="img-fluid"
+loading="lazy"
+alt="Painel elétrico organizado">
 </div>
-
 </div>
 
 <div class="col-lg-6 reveal">
 
-<div class="section-title">
-
+<div class="section-title mb-4">
 <h2>
-Onde podemos <span>atuar</span>
+Por que um painel bem montado <span>faz diferença?</span>
 </h2>
-
 </div>
 
-<ul class="feature-list">
+<p>
+Um painel elétrico bem projetado e bem montado reduz falhas, facilita manutenção, melhora a segurança e transmite profissionalismo para toda a instalação.
+</p>
 
-<li><i class="fas fa-check-circle"></i> Residências e casas inteligentes</li>
-<li><i class="fas fa-check-circle"></i> Comércios, lojas e escritórios</li>
-<li><i class="fas fa-check-circle"></i> Condomínios e portarias</li>
-<li><i class="fas fa-check-circle"></i> Galpões e áreas industriais</li>
-<li><i class="fas fa-check-circle"></i> Áreas externas, garagens e acessos</li>
-<li><i class="fas fa-check-circle"></i> Integração com automação e controle de acesso</li>
-
+<ul class="check-list mt-4">
+<li><i class="fas fa-check-circle"></i>Menos tempo parado em manutenções e diagnósticos.</li>
+<li><i class="fas fa-check-circle"></i>Melhor organização dos circuitos e componentes.</li>
+<li><i class="fas fa-check-circle"></i>Maior segurança para operadores e equipe técnica.</li>
+<li><i class="fas fa-check-circle"></i>Facilidade para expansão, alterações e futuras automações.</li>
+<li><i class="fas fa-check-circle"></i>Acabamento profissional para ambientes industriais e comerciais.</li>
 </ul>
 
-<a href="https://wa.me/5531972368967" target="_blank" class="btn-main mt-4" rel="noopener noreferrer">
-<i class="fab fa-whatsapp"></i>
-Falar com nossa equipe
-</a>
-
 </div>
 
 </div>
 
 </div>
-
 </section>
 
-<section>
-
+<section id="orcamento">
 <div class="container">
+<div class="cta-box text-center reveal">
 
-<div class="cta-box reveal">
+<div class="section-title mb-4">
+<h2>
+Precisa montar ou reformar um <span>painel elétrico?</span>
+</h2>
+</div>
 
-<h2>Precisa proteger sua casa, empresa ou galpão?</h2>
-
-<p>
-Fale com a AUTEC e solicite uma avaliação para implantação de CFTV, monitoramento, controle de acesso ou segurança eletrônica integrada.
+<p class="mb-5">
+Fale com a AUTEC e solicite uma análise técnica para sua necessidade. Atendemos Belo Horizonte e região metropolitana.
 </p>
 
 <a href="https://wa.me/5531972368967" target="_blank" class="btn-main" rel="noopener noreferrer">
 <i class="fab fa-whatsapp"></i>
-Solicitar orçamento agora
+Chamar no WhatsApp
 </a>
 
 </div>
-
 </div>
-
 </section>
 
 <footer>
-
 <div class="container">
 
 <div class="row align-items-center">
 
 <div class="col-lg-6 mb-4 mb-lg-0">
-
 <img src="logo.png?v=2" class="footer-logo" alt="Logo AUTEC" loading="lazy" decoding="async">
 
 <p>
@@ -646,22 +684,18 @@ AUTEC © 2026 — Engenharia Elétrica e Automação Industrial.
 <p>
 Atendimento em Belo Horizonte e Região Metropolitana.
 </p>
-
 </div>
 
 <div class="col-lg-6 text-lg-end">
-
-<p><a href="index.html">Início</a></p>
+<p><a href="index.html#inicio">Início</a></p>
 <p><a href="index.html#servicos">Serviços</a></p>
 <p><a href="index.html#sobre">Sobre Nós</a></p>
 <p><a href="index.html#contato">Contato</a></p>
-
 </div>
 
 </div>
 
 </div>
-
 </footer>
 
 <a href="https://wa.me/5531972368967" target="_blank" class="whatsapp-float" rel="noopener noreferrer" aria-label="Solicitar orçamento pelo WhatsApp">
@@ -674,20 +708,21 @@ Atendimento em Belo Horizonte e Região Metropolitana.
 const reveals = document.querySelectorAll('.reveal');
 
 function revealOnScroll(){
-reveals.forEach(reveal => {
-const windowHeight = window.innerHeight;
-const revealTop = reveal.getBoundingClientRect().top;
-const revealPoint = 100;
+  reveals.forEach(reveal => {
+    const windowHeight = window.innerHeight;
+    const revealTop = reveal.getBoundingClientRect().top;
+    const revealPoint = 100;
 
-if(revealTop < windowHeight - revealPoint){
-reveal.classList.add('active');
-}
-});
+    if(revealTop < windowHeight - revealPoint){
+      reveal.classList.add('active');
+    }
+  });
 }
 
 window.addEventListener('scroll', revealOnScroll);
-revealOnScroll();
+window.addEventListener('load', revealOnScroll);
 </script>
+
 
 </body>
 </html>
