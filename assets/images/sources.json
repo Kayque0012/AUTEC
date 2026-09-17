@@ -1,0 +1,176 @@
+{
+  "description": "Original image URLs, dimensions and optimized files hosted by AUTEC",
+  "images": [
+    {
+      "url": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1920&auto=format&fit=crop",
+      "path": "assets/images/photo-1503387762-592deb58ef4e-1920.webp",
+      "original_bytes": 203499,
+      "bytes": 103760,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "ef1bbb12e2776ed509ce2ae6c71e9401bc0830d4f1f27e39b1ebacab0cf779b4"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1200&auto=format&fit=crop",
+      "path": "assets/images/photo-1504307651254-35680f356dfd-1200.webp",
+      "original_bytes": 283202,
+      "bytes": 195048,
+      "width": 1200,
+      "height": 795,
+      "sha256": "80ea3e54a48f2fab0569e3c4a6b6c998e645ac72214eafcb038f9071430bf0af"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1920&auto=format&fit=crop",
+      "path": "assets/images/photo-1504307651254-35680f356dfd-1920.webp",
+      "original_bytes": 597450,
+      "bytes": 406824,
+      "width": 1920,
+      "height": 1272,
+      "sha256": "4c29b5f98a30094a1435302f9d909fce18fce2bc17798f21d0ca8d0de966bf2a"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1516192518150-0d8fee5425e3?q=80&w=1920&auto=format&fit=crop",
+      "path": "assets/images/photo-1516192518150-0d8fee5425e3-1920.webp",
+      "original_bytes": 769431,
+      "bytes": 448410,
+      "width": 1920,
+      "height": 2560,
+      "sha256": "e08b9b2ccdc1454c39fa0c5f60e4f9b1914abbc45da5c196dbf2baa81d520a4b"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop",
+      "path": "assets/images/photo-1516321318423-f06f85e504b3-1200.webp",
+      "original_bytes": 108932,
+      "bytes": 52778,
+      "width": 1200,
+      "height": 800,
+      "sha256": "9567c8ed7536f7927c23c93a1e358f8fb66e7e0fe3382be355bbf0da6deb92b8"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1920&auto=format&fit=crop",
+      "path": "assets/images/photo-1517048676732-d65bc937f952-1920.webp",
+      "original_bytes": 280010,
+      "bytes": 150684,
+      "width": 1920,
+      "height": 1280,
+      "sha256": "908b7ccb0fdb02f1a090c8c401d9865eef6e6820309d7db94a5b8934b6f24c60"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1200&auto=format&fit=crop",
+      "path": "assets/images/photo-1518770660439-4636190af475-1200.webp",
+      "original_bytes": 163803,
+      "bytes": 109692,
+      "width": 1200,
+      "height": 800,
+      "sha256": "644c1a04382732cc344109658568d395ae862f25cfb99cf5a58a080a828559e7"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1200&auto=format&fit=crop",
+      "path": "assets/images/photo-1520607162513-77705c0f0d4a-1200.webp",
+      "original_bytes": 138398,
+      "bytes": 93100,
+      "width": 1200,
+      "height": 802,
+      "sha256": "73c3ce211682ec4408b6d3ffcd8178b36d9d49b9b575d7c79503b5b6664a289e"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1558002038-1055907df827?q=80&w=1200&auto=format&fit=crop",
+      "path": "assets/images/photo-1558002038-1055907df827-1200.webp",
+      "original_bytes": 68076,
+      "bytes": 26504,
+      "width": 1200,
+      "height": 800,
+      "sha256": "bc1ab5edda7f7edd987dc73fd5776ead70e3cc9368c1dedf031b1380d0ab49ed"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1558002038-1055907df827?q=80&w=1920&auto=format&fit=crop",
+      "path": "assets/images/photo-1558002038-1055907df827-1920.webp",
+      "original_bytes": 162020,
+      "bytes": 54236,
+      "width": 1920,
+      "height": 1280,
+      "sha256": "7271bf698df5a8831962a4906278f21957eb861abdd4d26f7c3cd5caae3dee69"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1200&auto=format&fit=crop",
+      "path": "assets/images/photo-1558494949-ef010cbdcc31-1200.webp",
+      "original_bytes": 186968,
+      "bytes": 151508,
+      "width": 1200,
+      "height": 673,
+      "sha256": "3f126ec2c63c673c0ce277dcb880335110bcd84978c69d3f8501718f11873d1f"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1920&auto=format&fit=crop",
+      "path": "assets/images/photo-1558494949-ef010cbdcc31-1920.webp",
+      "original_bytes": 455391,
+      "bytes": 369424,
+      "width": 1920,
+      "height": 1077,
+      "sha256": "59a1fa3633978c1c82d213f5b723a96a83e6e8dfcb67e9cd1ed55f8a2db5f2e6"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=80&w=1200&auto=format&fit=crop",
+      "path": "assets/images/photo-1558618666-fcd25c85cd64-1200.webp",
+      "original_bytes": 104123,
+      "bytes": 47304,
+      "width": 1200,
+      "height": 800,
+      "sha256": "13c4cae1fdd741cfca91b56fd663a11cc01ce27e0f61231c400e7d800522a40b"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1581092162384-8987c1d64718?q=80&w=1200&auto=format&fit=crop",
+      "path": "assets/images/photo-1581092162384-8987c1d64718-1200.webp",
+      "original_bytes": 129274,
+      "bytes": 67732,
+      "width": 1200,
+      "height": 800,
+      "sha256": "9e2c4f5d77d64733870a19c2c4fe43228fb27a4125fe784031e27f210b1f81a2"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1581092162384-8987c1d64718?q=80&w=1920&auto=format&fit=crop",
+      "path": "assets/images/photo-1581092162384-8987c1d64718-1920.webp",
+      "original_bytes": 306633,
+      "bytes": 152034,
+      "width": 1920,
+      "height": 1280,
+      "sha256": "8eeae9eb2f6e779431fb19526812b0b446f3424db7703ce60bfc6b11443e0b9c"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?q=80&w=1200&auto=format&fit=crop",
+      "path": "assets/images/photo-1581092580497-e0d23cbdf1dc-1200.webp",
+      "original_bytes": 164436,
+      "bytes": 95220,
+      "width": 1200,
+      "height": 800,
+      "sha256": "6556d37ed03fd592e922fe7d66f5f7a2d906eabc8a5d3721771a48012f071a4a"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?q=80&w=1200&auto=format&fit=crop",
+      "path": "assets/images/photo-1581092918056-0c4c3acd3789-1200.webp",
+      "original_bytes": 91507,
+      "bytes": 45786,
+      "width": 1200,
+      "height": 800,
+      "sha256": "123b1d698c3deb2bedf4a29e6e9c4b84e5da9dd9db834dba0db713ba37067922"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1581092921461-eab62e97a780?q=80&w=1200&auto=format&fit=crop",
+      "path": "assets/images/photo-1581092921461-eab62e97a780-1200.webp",
+      "original_bytes": 76242,
+      "bytes": 32672,
+      "width": 1200,
+      "height": 800,
+      "sha256": "1639c36ab67907df1aaa898702990a3aa0d874dbd8d730c86db2b379dd11ca8f"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?q=80&w=1200&auto=format&fit=crop",
+      "path": "assets/images/photo-1621905252507-b35492cc74b4-1200.webp",
+      "original_bytes": 133977,
+      "bytes": 70924,
+      "width": 1200,
+      "height": 801,
+      "sha256": "f523bfcd5513ce380663e64e3af770eada28849c90623bd60e9a350686ac4e6e"
+    }
+  ]
+}
