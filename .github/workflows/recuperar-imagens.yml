@@ -1,0 +1,108 @@
+name: Preparar imagens locais AUTEC
+on:
+  push:
+    branches: ["codex/recuperar-imagens-20260917"]
+permissions:
+  contents: write
+jobs:
+  images:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Instalar conversor de imagens
+        run: python -m pip install Pillow==11.3.0
+      - name: Recuperar imagens e preparar commit sem publicar
+        env:
+          GH_TOKEN: ${{ github.token }}
+          SOURCE_COMMIT: 92fb1eb1e0d1f5444b3608ffb2fc3ba64c17c654
+        run: |
+          python - <<'PY'
+          import base64, concurrent.futures, hashlib, io, json, os, re, time, urllib.request
+          from pathlib import Path
+          from PIL import Image
+          
+          repo = os.environ["GITHUB_REPOSITORY"]
+          base = os.environ["SOURCE_COMMIT"]
+          token = os.environ["GH_TOKEN"]
+          api_base = "https://api.github.com/repos/" + repo
+          def api(path, data=None):
+              body = None if data is None else json.dumps(data).encode()
+              req = urllib.request.Request(api_base + path, data=body, headers={
+                  "Authorization": "Bearer " + token, "Accept": "application/vnd.github+json",
+                  "Content-Type": "application/json", "X-GitHub-Api-Version": "2022-11-28"})
+              with urllib.request.urlopen(req, timeout=60) as r:
+                  return json.load(r)
+          
+          commit = api("/git/commits/" + base)
+          tree = api("/git/trees/" + commit["tree"]["sha"] + "?recursive=1")
+          assert not tree.get("truncated")
+          paths = {e["path"] for e in tree["tree"]}
+          assert not any(p.endswith("AGENTS.md") for p in paths), "Repository instructions require review"
+          texts = {}
+          for entry in tree["tree"]:
+              if entry["path"].endswith((".html", ".css", ".js")) and entry["type"] == "blob":
+                  blob = api("/git/blobs/" + entry["sha"])
+                  texts[entry["path"]] = base64.b64decode(blob["content"]).decode("utf-8")
+          
+          pattern = re.compile(r"https://images\.unsplash\.com/[^\s\"')<>]+")
+          urls = sorted({u for text in texts.values() for u in pattern.findall(text)})
+          assert urls, "No external images found"
+          def download(url):
+              match = re.fullmatch(r"https://images\.unsplash\.com/(photo-[\w-]+)\?(.+)", url)
+              assert match, url
+              width = re.search(r"(?:^|&)w=(\d+)", match[2])[1]
+              path = "assets/images/" + match[1] + "-" + width + ".webp"
+              raw = None
+              for attempt in range(3):
+                  try:
+                      req = urllib.request.Request(url, headers={"User-Agent": "AUTEC image migration"})
+                      with urllib.request.urlopen(req, timeout=60) as response:
+                          assert response.headers.get("Content-Type", "").startswith("image/")
+                          raw = response.read()
+                      break
+                  except Exception:
+                      if attempt == 2: raise
+                      time.sleep(2)
+              image = Image.open(io.BytesIO(raw))
+              image.load()
+              output = io.BytesIO()
+              image.convert("RGB").save(output, "WEBP", quality=85, method=6)
+              content = output.getvalue()
+              with Image.open(io.BytesIO(content)) as verified:
+                  verified.verify()
+              return {"url":url, "path":path, "original_bytes":len(raw), "bytes":len(content),
+                      "width":image.width, "height":image.height, "sha256":hashlib.sha256(content).hexdigest()}, content
+          with concurrent.futures.ThreadPoolExecutor(max_workers=6) as pool:
+              downloaded = list(pool.map(download, urls))
+          assert len({m["path"] for m, b in downloaded}) == len(downloaded)
+          mapping = {m["url"]:m["path"] for m, b in downloaded}
+          edits = {}
+          for path, original in texts.items():
+              updated = pattern.sub(lambda m:mapping[m[0]], original)
+              if updated != original:
+                  assert "images.unsplash.com/" not in updated
+                  edits[path] = updated
+          for path, text in edits.items():
+              for image_path in re.findall(r"assets/images/[^\s\"')<>]+", text):
+                  assert image_path in mapping.values()
+          entries = []
+          for metadata, binary in downloaded:
+              result = api("/git/blobs", {"content":base64.b64encode(binary).decode(), "encoding":"base64"})
+              entries.append({"path":metadata["path"],"mode":"100644","type":"blob","sha":result["sha"]})
+              print("Uploaded " + metadata["path"], flush=True)
+          for path, content in edits.items():
+              entries.append({"path":path,"mode":"100644","type":"blob","content":content})
+          manifest = {"description":"Original image URLs, dimensions and optimized files hosted by AUTEC",
+                      "images":[m for m,b in downloaded]}
+          entries.append({"path":"assets/images/sources.json","mode":"100644","type":"blob",
+                          "content":json.dumps(manifest, ensure_ascii=False, indent=2) + "\n"})
+          new_tree = api("/git/trees", {"base_tree":commit["tree"]["sha"],"tree":entries})
+          result = api("/git/commits", {"message":"Hospeda imagens do site localmente em WebP e remove dependência do Unsplash",
+                                      "tree":new_tree["sha"],"parents":[base]})
+          summary = {"commit":result["sha"], "tree":new_tree["sha"], "pages":list(edits),
+                     "images":len(downloaded), "references":sum(len(pattern.findall(texts[p])) for p in edits),
+                     "original_bytes":sum(m["original_bytes"] for m,b in downloaded),
+                     "optimized_bytes":sum(m["bytes"] for m,b in downloaded)}
+          print("AUTEC_RESULT=" + json.dumps(summary), flush=True)
+          
+          PY
