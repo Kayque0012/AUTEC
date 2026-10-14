@@ -377,9 +377,8 @@ margin-top:10px;
 </li>
 
 <li class="nav-item ms-lg-4 mt-3 mt-lg-0">
-<a href="https://wa.me/5531972368967"
-target="_blank"
-class="btn-main">
+<a
+class="btn-main" role="link" aria-disabled="true" title="Contato temporariamente indisponível" style="cursor:default">
 
 <i class="fab fa-whatsapp"></i>
 Solicitar orçamento
@@ -409,9 +408,8 @@ Soluções em <span>Engenharia Elétrica</span> e Automação Industrial
 A AUTEC atua em Belo Horizonte e região metropolitana oferecendo soluções modernas em automação industrial, projetos elétricos, NR12, montagem de painéis e tecnologia aplicada.
 </p>
 
-<a href="https://wa.me/5531972368967"
-target="_blank"
-class="btn-main">
+<a
+class="btn-main" role="link" aria-disabled="true" title="Contato temporariamente indisponível" style="cursor:default">
 
 <i class="fab fa-whatsapp"></i>
 Solicitar orçamento
@@ -669,9 +667,8 @@ Com atendimento em Belo Horizonte e região metropolitana, a empresa atua em pro
 Nosso compromisso é entregar soluções inteligentes que agreguem desempenho, confiabilidade e evolução tecnológica para cada cliente e projeto.
 </p>
 
-<a href="https://wa.me/5531972368967"
-target="_blank"
-class="btn-main mt-4">
+<a
+class="btn-main mt-4" role="link" aria-disabled="true" title="Contato temporariamente indisponível" style="cursor:default">
 
 <i class="fab fa-whatsapp"></i>
 Falar com nossa equipe
@@ -704,9 +701,8 @@ Solicite um <span>Orçamento</span>
 Entre em contato diretamente pelo WhatsApp e fale com nossa equipe técnica.
 </p>
 
-<a href="https://wa.me/5531972368967"
-target="_blank"
-class="btn-main">
+<a
+class="btn-main" role="link" aria-disabled="true" title="Contato temporariamente indisponível" style="cursor:default">
 
 <i class="fab fa-whatsapp"></i>
 Chamar no WhatsApp
@@ -765,9 +761,8 @@ Belo Horizonte e Região Metropolitana.
 
 </footer>
 
-<a href="https://wa.me/5531972368967"
-target="_blank"
-class="whatsapp-float">
+<a
+class="whatsapp-float" hidden style="display:none" aria-hidden="true">
 
 <i class="fab fa-whatsapp"></i>
 
